@@ -1,4 +1,4 @@
-# DT228/DT282 Object Oriented Programming 2019-2020
+# DT228/DT282 Object Oriented Programming 2020-2021
 
 Resources
 ---------
@@ -22,32 +22,42 @@ Resources
 - Week 12 Assignment Submission - 30%
 - End of Year exam - 50%
 
+# Previous Years Lab Tests
+
+- https://github.com/skooter500/OOP-LabTest-2020-Starter
+- https://github.com/skooter500/OOP-LabTest-2020/
+- https://github.com/skooter500/OOP-Test-2019-Starter
+- https://github.com/skooter500/OOP-Test-2019-Solution
+- https://github.com/skooter500/OOP-2018-Lab-Test-2
+- https://github.com/skooter500/OOP_Labtest1_2017_Starter
+- https://github.com/skooter500/OOP-LabTest1-2016
+
+
 # Week 1 - Introduction
 ## Lab
 ## Learning outcomes
 - Fork the repo, configure the upstream remotes
 - Write your first Java code
-- Think about doing a project for Games Fleadh!
 
 Firstly fork *this* repository by clicking the fork button above, so that you get your own copy of the repo to work on this semester. Now create a new empty folder on your computer somewhere or on your network drive and then right click on the folder and choose git bash here. Alternatively you can start the bash and cd to the new folder. To clone the repository for your fork:
 
 ```bash
-git clone https://github.com/YOURGITUSERNAME/OOP-2019-2020
+git clone https://github.com/YOURGITUSERNAME/OOP-2020-2021
 ```
 
 Replace YOURGITUSERNAME with your username. Now cd into the repo and check the origin and upstream remotes are set up correctly
 
 ```bash
-cd OOP-2019-2020
+cd OOP-2020-2021
 git remote -v
 ```
 You should see something like this:
 
 ```bash
-origin  https://github.com/YOURGITUSERNAME/OOP-2019-2020 (fetch)
-origin  https://github.com/YOURGITUSERNAME/OOP-2019-2020 (push)
-upstream  https://github.com/skooter500/OOP-2019-2020 (fetch)
-upstream  https://github.com/skooter500/OOP-2019-2020 (push)
+origin  https://github.com/YOURGITUSERNAME/OOP-2020-2021 (fetch)
+origin  https://github.com/YOURGITUSERNAME/OOP-2020-2021 (push)
+upstream  https://github.com/skooter500/OOP-2020-2021 (fetch)
+upstream  https://github.com/skooter500/OOP-2020-2021 (push)
 ```
 
 If you don't see the upstream remote, you can set it up by typing
@@ -82,7 +92,7 @@ On the terminal. If you do, then congratulations! You have successfully compiled
 git checkout -b lab1
 ```
 
-Use an editor (like Visual Studio code or notepad++) to open up the files in the folder src/ie/tudublin and study them to see if you can figure out whats happening. Modify the code as follows:
+Use an editor (like Visual Studio code or notepad++) to open up the files in the folder src/ie/tudublin and study them to see if you can figure out what's happening. Modify the code as follows:
 
 - Write a method (functions are called methods in Java) on the Cat class called kill. It should subtract 1 from numLives if numLives is > 0 and print the message "Ouch!". If numLives is 0, you should just print the message "Dead"
 - In the Main class in a loop, call kill until the Cat is dead.
@@ -98,18 +108,10 @@ git push --set-upstream origin lab1
 
 The "--set-upstream origin lab1" option is only required the first time you commit onto a new branch. After that you can just type "git push"
 
-Check out [this article about last years Games Fleadh projects](https://www.dit.ie/computing/newsevents/eventscompetitions/eventsarticles/headline172312en.html). Have a look at the youtube videos and see what you think!
-
-Check out the [Games Fleadh official website](http://gamesfleadh.ie)
-
-[Download Unity Game Engine](https://unity.com/)
-
-[Check out the Unity tutorials](https://learn.unity.com/) and start making some games!
-
-Check out [this playlist](https://www.youtube.com/watch?v=jw5zXkg84A0&list=PL1n0B6z4e_E79Sl5I9Q7MlJk8tKjhHv_9) and [this playlist](https://www.youtube.com/watch?v=cW8s5i9dmqA&list=PL1n0B6z4e_E6jErrS0ScSCaVrN7KV729x) to get some inspiration if you plan to do the music visualiser assignment
+Check out [this playlist](https://www.youtube.com/watch?v=jw5zXkg84A0&list=PL1n0B6z4e_E79Sl5I9Q7MlJk8tKjhHv_9) and [this playlist](https://www.youtube.com/watch?v=cW8s5i9dmqA&list=PL1n0B6z4e_E6jErrS0ScSCaVrN7KV729x) to get some inspiration for your assignment
 
 ## Lecture
-- [Introduction slides](https://drive.google.com/file/d/1wdMcXJzaRBCSm4Ouj4_ZjWj9Mh292fQB/view?usp=sharing)
+- [Introduction slides](https://drive.google.com/open?id=1wdMcXJzaRBCSm4Ouj4_ZjWj9Mh292fQB)
 - [hello world](java/src/ie/tudublin)
 
 Some assignments from previous years:

@@ -7,7 +7,7 @@ Fork [this starter project](https://github.com/skooter500/MusicVisuals)
 
 Your assignment can be a game or just a visual art piece. You can make your assignment respond to whatever music is playing or it can be something inspired by a particular piece of music. I expect you to have to do self directed learning on the project and come up with ideas and code that we haven't done in the class.
 
-I will need you to make a youtube video demonstrating your assignment and write a document in markdown format with the following sections:
+You need to make a youtube video demonstrating your assignment and write a document in markdown format with the following sections:
 
 - What your assignment does
 - What the controls are
@@ -15,8 +15,6 @@ I will need you to make a youtube video demonstrating your assignment and write 
 - A list of the stuff you are most proud of. This will help me to grade the assignments.
 
  Check out these previous assignments for inspiration:  
-
- https://www.youtube.com/watch?v=NGQbYEESZEg&list=
 
 [![Video](http://img.youtube.com/vi/NGQbYEESZE/0.jpg)](https://www.youtube.com/playlist?list=PL1n0B6z4e_E7I2bIWWpH8NAa6kPx95sw5)
 
