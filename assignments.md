@@ -16,10 +16,9 @@ You need to make a youtube video demonstrating your assignment and write a docum
 
  Check out these previous assignments for inspiration:  
 
-[![Video](http://img.youtube.com/vi/NGQbYEESZE/0.jpg)](https://www.youtube.com/playlist?list=PL1n0B6z4e_E7I2bIWWpH8NAa6kPx95sw5)
+- https://www.youtube.com/playlist?list=PL1n0B6z4e_E7I2bIWWpH8NAa6kPx95sw5
 
-
-[![Video](http://img.youtube.com/vi/PL1n0B6z4e_E6jErrS0ScSCaVrN7KV729x/0.jpg)](https://www.youtube.com/playlist?list=PL1n0B6z4e_E6jErrS0ScSCaVrN7KV729x)
+- https://www.youtube.com/playlist?list=PL1n0B6z4e_E6jErrS0ScSCaVrN7KV729x
 
 Marking Scheme:
 
