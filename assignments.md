@@ -41,13 +41,12 @@ Rubric
 
 Some assignments from previous years:
 
-[![YouTube](http://img.youtube.com/vi/TY6Wv9lr72A/0.jpg)](https://www.youtube.com/watch?v=TY6Wv9lr72A)
+- https://www.youtube.com/watch?v=TY6Wv9lr72A
 
-[![YouTube](http://img.youtube.com/vi/cW8s5i9dmqA/0.jpg)](https://www.youtube.com/watch?v=cW8s5i9dmqA)
+- https://www.youtube.com/watch?v=cW8s5i9dmqA
 
 Rules!
 
-- As much as possible this project should be 100% your own code. You will not get any marks for any code that include that you get from books or from the internet. This assignment is about testing what *you* have learned and what *you* can do.
+- As much as possible this project should be 100% your own code. 
 - There will be a feedback session after the assignment where you will have the opportunity to get individual feedback on your submission and have your mark explained to you.
-- All assignment submissions must be demoed in the lab that week.
 - If you need to submit an assignment late, you can submit a PC/1 form to the exams office.
