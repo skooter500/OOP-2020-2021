@@ -53,12 +53,15 @@ Firstly fork *this* repository by clicking the fork button above, so that you ge
 git clone https://github.com/YOURGITUSERNAME/OOP-2020-2021
 ```
 
-Replace YOURGITUSERNAME with your username. Now cd into the repo and check the origin and upstream remotes are set up correctly
+Replace YOURGITUSERNAME with your github username. You can also copy the URL to the repo from your browser and paste it into the console. To paste into the bash on Windows is right click. You can use Cmd + C, Cmd + V on the Mac.
+
+Now cd into the repo and check the origin and upstream remotes are set up correctly
 
 ```bash
 cd OOP-2020-2021
 git remote -v
 ```
+
 You should see something like this:
 
 ```bash
@@ -75,7 +78,7 @@ git remote add upstream https://github.com/skooter500/OOP-2020-2021
 ```
 You can read more about forking a git repository and setting up the upstream remote in [this article](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 
-Once the upstream is setup, you will be able to push code to your own repo and also keep it up to date with the changes I make.
+Once the upstream is setup, you will be able to push code to your own repo and also keep it up to date with the master branch of the changes I make each class.
 
 If you already forked the repo before the lab, you may need to update your master branch from my master branch to get the changes I made:
 
