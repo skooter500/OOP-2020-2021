@@ -7,13 +7,12 @@ public class Main
         System.out.println("Hello world");
 
         Animal misty = new Dog("Misty");
-
         Animal topCat = new Cat("TopCat");
 
         System.out.println(misty);
         System.out.println(topCat);
 
-        misty = topCat;
+        misty = topCat; // Assign
 
         topCat.setName("Garfield");
 

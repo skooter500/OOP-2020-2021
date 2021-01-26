@@ -36,10 +36,17 @@ Resources
 # Week 1 - Introduction
 ## Lab
 ## Learning outcomes
+- Set up Java, Visual studio code and the Java Extensions
 - Fork the repo, configure the upstream remotes
 - Write your first Java code
 
-Firstly fork *this* repository by clicking the fork button above, so that you get your own copy of the repo to work on this semester. Now create a new empty folder on your computer somewhere or on your network drive and then right click on the folder and choose git bash here. Alternatively you can start the bash and cd to the new folder. To clone the repository for your fork:
+## Part 1 - Installing Java
+
+Install the software you will need for this module and set up your path to the Java Development Kit. [This document explains how to do it](install.md)
+
+## Part 2 - Forking the repo
+
+Firstly fork *this* repository by clicking the fork button above, so that you get your own copy of the course repo to work on this semester. Now create a new empty folder on your computer somewhere right click on the folder and choose git bash here. Alternatively you can start the bash and cd to the new folder. To clone the repository for your fork:
 
 ```bash
 git clone https://github.com/YOURGITUSERNAME/OOP-2020-2021
@@ -63,11 +70,13 @@ upstream  https://github.com/skooter500/OOP-2020-2021 (push)
 If you don't see the upstream remote, you can set it up by typing
 
 ```bash
-git remote add upstream https://github.com/skooter500/OOP-2019-2020
+git remote add upstream https://github.com/skooter500/OOP-2020-2021
 ```
 You can read more about forking a git repository and setting up the upstream remote in [this article](https://help.github.com/en/github/getting-started-with-github/fork-a-repo)
 
 Once the upstream is setup, you will be able to push code to your own repo and also keep it up to date with the changes I make.
+
+## Part 3 - Compiling & running Java
 
 To compile and run the Java code in the src folder, you should type:
 
@@ -80,13 +89,14 @@ java -cp bin ie.tudublin.Main
 You should see
 
 ```
-Hello world!
+Hello world
 Misty
-Woof!
-Meow!
+TopCat
+Garfield
+Garfield
 ```
 
-On the terminal. If you do, then congratulations! You have successfully compiled and run your first Java program. Now create a branch to store your changes today. Best not to modify the master branch so you can keep it up to date with my changes:
+On the terminal. If you do, then congratulations! You have successfully compiled and run your first Java program using the command line tools. Now create a branch to store your changes today. Best not to modify the master branch so you can keep it up to date with my changes:
 
 ```bash
 git checkout -b lab1
@@ -95,7 +105,12 @@ git checkout -b lab1
 Use an editor (like Visual Studio code or notepad++) to open up the files in the folder src/ie/tudublin and study them to see if you can figure out what's happening. Modify the code as follows:
 
 - Write a method (functions are called methods in Java) on the Cat class called kill. It should subtract 1 from numLives if numLives is > 0 and print the message "Ouch!". If numLives is 0, you should just print the message "Dead"
-- In the Main class in a loop, call kill until the Cat is dead.
+- Create a new instance of the Cat class like this
+
+    ```Java
+    Cat ginger = new Cat("Ginger");
+    ```
+- In the Main class in a loop, call kill on ginger until ginger is dead.
 - Compile and run your program until you have no bugs and you get the desired output.
 
 Commit and push your changes:
@@ -108,7 +123,17 @@ git push --set-upstream origin lab1
 
 The "--set-upstream origin lab1" option is only required the first time you commit onto a new branch. After that you can just type "git push"
 
-Check out [this playlist](https://www.youtube.com/watch?v=jw5zXkg84A0&list=PL1n0B6z4e_E79Sl5I9Q7MlJk8tKjhHv_9) and [this playlist](https://www.youtube.com/watch?v=cW8s5i9dmqA&list=PL1n0B6z4e_E6jErrS0ScSCaVrN7KV729x) to get some inspiration for your assignment
+## Part 4 - Hello Processing
+
+Checkout the branch HelloProcessing by typing
+
+```
+git checkout HelloProcessing from the bash
+```
+
+In Visual Studio Code, choose File | Open Folder and open the OOP-2020-2021 folder. Press F5
+
+
 
 ## Lecture
 - [Introduction slides](https://drive.google.com/open?id=1wdMcXJzaRBCSm4Ouj4_ZjWj9Mh292fQB)
