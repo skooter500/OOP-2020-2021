@@ -42,7 +42,7 @@ Resources
 
 ## Part 1 - Installing Java
 
-Install the software you will need for this module and set up your path to the Java Development Kit. [This document explains how to do it](install.md)
+Install the software you will need for this module and set up your path to the Java Development Kit. [This document explains how to do it](install.md).
 
 ## Part 2 - Forking the repo
 
@@ -135,17 +135,21 @@ In Visual Studio Code, choose File | Open Folder and open the OOP-2020-2021 fold
 
 ![Hello Processing](images/hello.png)
 
+If you are done check out the references for classes, packages, constructors and accessors below.
+
+Also! [Read the first three chapters of the git manual](https://git-scm.com/docs/user-manual).
+
 ## Lecture
 - [Introduction slides](https://drive.google.com/open?id=1wdMcXJzaRBCSm4Ouj4_ZjWj9Mh292fQB)
 - [hello world](java/src/ie/tudublin)
-- Classes
-- Packages
-- Constructors
-- Accessors
+- [Classes](https://docs.oracle.com/javase/tutorial/java/concepts/class.html)
+- [Packages](https://docs.oracle.com/javase/tutorial/java/package/packages.html)
+- [Constructors](https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html)
+- [Accessors](https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html)
 
 Some assignments from previous years:
 
-[![YouTube](http://img.youtube.com/vi/ENDHavHsL2k/0.jpg)](https://www.youtube.com/watch?v=ENDHavHsL2k)
+[![YouTube](http://img.youtube.com/vi/NGQbYEESZE/0.jpg)](https://www.youtube.com/watch?v=NGQbYEESZEg&list=PL1n0B6z4e_E7I2bIWWpH8NAa6kPx95sw5)
 
 [![YouTube](http://img.youtube.com/vi/zLXon_nlibY/0.jpg)](https://www.youtube.com/watch?v=zLXon_nlibY)
 
