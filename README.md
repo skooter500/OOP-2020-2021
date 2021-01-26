@@ -38,7 +38,8 @@ Resources
 ## Learning outcomes
 - Set up Java, Visual studio code and the Java Extensions
 - Fork the repo, configure the upstream remotes
-- Write your first Java code
+- Write your first Java code using command line tools
+- Test out Visual Studio Code
 
 ## Part 1 - Installing Java
 
