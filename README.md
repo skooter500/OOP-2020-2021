@@ -105,6 +105,9 @@ git checkout -b lab1
 
 Use an editor (like Visual Studio code or notepad++) to open up the files in the folder src/ie/tudublin and study them to see if you can figure out what's happening. Modify the code as follows:
 
+- Make a private ```int``` field on the Cat class called numLives.
+- Write public accessors for the field (see how I did this for the name field on the Animal class)
+- Set the value of this field to 9 in the Cat constructor  
 - Write a method (functions are called methods in Java) on the Cat class called kill. It should subtract 1 from numLives if numLives is > 0 and print the message "Ouch!". If numLives is 0, you should just print the message "Dead"
 - Create a new instance of the Cat class like this
 
