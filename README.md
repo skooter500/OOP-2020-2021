@@ -131,13 +131,17 @@ Checkout the branch HelloProcessing by typing
 git checkout HelloProcessing from the bash
 ```
 
-In Visual Studio Code, choose File | Open Folder and open the OOP-2020-2021 folder. Press F5
+In Visual Studio Code, choose File | Open Folder and open the OOP-2020-2021 folder. Press F5 and if all goes well, you should see something that looks like this:
 
-
+![Hello Processing](images/hello.png)
 
 ## Lecture
 - [Introduction slides](https://drive.google.com/open?id=1wdMcXJzaRBCSm4Ouj4_ZjWj9Mh292fQB)
 - [hello world](java/src/ie/tudublin)
+- Classes
+- Packages
+- Constructors
+- Accessors
 
 Some assignments from previous years:
 
