@@ -149,7 +149,7 @@ Also! [Read the first three chapters of the git manual](https://git-scm.com/docs
 
 Some assignments from previous years:
 
-[![YouTube](http://img.youtube.com/vi/NGQbYEESZE/0.jpg)](https://www.youtube.com/watch?v=NGQbYEESZEg&list=PL1n0B6z4e_E7I2bIWWpH8NAa6kPx95sw5)
+[![YouTube](http://img.youtube.com/vi/NGQbYEESZEg/0.jpg)](https://www.youtube.com/watch?v=NGQbYEESZEg&list=PL1n0B6z4e_E7I2bIWWpH8NAa6kPx95sw5)
 
 [![YouTube](http://img.youtube.com/vi/zLXon_nlibY/0.jpg)](https://www.youtube.com/watch?v=zLXon_nlibY)
 
