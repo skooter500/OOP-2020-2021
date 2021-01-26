@@ -77,6 +77,14 @@ You can read more about forking a git repository and setting up the upstream rem
 
 Once the upstream is setup, you will be able to push code to your own repo and also keep it up to date with the changes I make.
 
+If you already forked the repo before the lab, you may need to update your master branch from my master branch to get the changes I made:
+
+```bash
+git fetch
+git checkout master
+git pull upstream master
+```
+
 ## Part 3 - Compiling & running Java
 
 To compile and run the Java code in the src folder, you should type:
