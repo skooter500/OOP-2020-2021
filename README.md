@@ -90,6 +90,7 @@ If you already forked the repo before the lab, you may need to update your maste
 git fetch
 git checkout master
 git pull upstream master
+git push
 ```
 
 ## Part 3 - Compiling & running Java
