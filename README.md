@@ -34,6 +34,10 @@ Resources
 
 
 # Week 1 - Introduction
+
+## Tutorial
+- [Coding Bat](https://codingbat.com/)
+
 ## Lab
 ## Learning outcomes
 - Set up Java, Visual studio code and the Java Extensions
