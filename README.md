@@ -32,6 +32,14 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 2 - Hello Processing
+
+- Check out the HelloProcessing1 class in the repo
+- We drew the all seeing eye using the Processing drawing methods
+- if statement exercises
+
+![](https://github.com/skooter500/GP-2016-2017/blob/master/images/p1.2.png?raw=true)
+
 
 # Week 1 - Introduction
 
