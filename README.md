@@ -1,6 +1,7 @@
 # DT228/DT282 Object Oriented Programming 2020-2021
 
 - test master
+- Monday test
 
 Resources
 ---------
