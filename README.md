@@ -36,8 +36,6 @@ Resources
 
 ## Lab
 
-# Lab 2
-
 ## Learning Outcomes
 - Practice drawing stuff and working out co-ordinates
 - Practice using variables and if statements in Java
