@@ -27,7 +27,7 @@ public class HelloProcessing2 extends PApplet
 	boolean b;
 	
 	public void draw()
-	{	// Takes one or 3 parameters. 1 is greyscale, 3 is RGB
+	{	// Takes 1 or 3 parameters. 1 is greyscale, 3 is RGB
 		background(0);         
 
 		// Turns off drawing around shapes
