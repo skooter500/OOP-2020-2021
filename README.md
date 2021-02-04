@@ -34,6 +34,9 @@ Resources
 
 # Week 2 - Hello Processing
 
+## Tutorial
+- [Solution to the lab video](https://web.microsoftstream.com/video/4129e73d-ed22-498b-afcc-0d1e3c3178fb)
+
 ## Lab
 
 ## Learning Outcomes
