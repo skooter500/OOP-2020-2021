@@ -82,52 +82,12 @@ public class BugZap extends PApplet
 
 	public void keyPressed()
 	{
-		if (keyCode == LEFT)
-		{
-			if (playerX > halfPlayerWidth)
-			{
-				playerX -= playerSpeed;
-			}
-		}
-		if (keyCode == RIGHT)
-		{
-			if (playerX < width - halfPlayerWidth)
-			{
-				playerX += playerSpeed;
-			}
-		}
-		if (key == ' ')
-		{
-			if (playerX > bugX - halfBugWidth && playerX < bugX + halfBugWidth)
-			{
-				line(playerX, playerY, playerX, bugY);
-				score ++;
-				resetBug();
-			}
-			else
-			{
-				line(playerX, playerY, playerX, 0);
-			}
-
-		}
+		
 	}	
 
 	void moveBug()
 	{
-		if ((frameCount % 30) == 0)
-		{
-			bugX += random(-5, +5);
-			if (bugX < halfBugWidth )
-			{
-			  bugX = halfBugWidth;
-			}
-			
-			if (bugX + halfBugWidth > width)
-			{
-			  bugX = width - halfBugWidth;
-			}
-			bugY +=2;
-		}
+		
 	}
 
 	public void draw()
