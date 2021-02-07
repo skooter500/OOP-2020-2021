@@ -59,7 +59,7 @@ Resources
 
 Use a loop, rect and the HSB colour space:
 
-![Sketch](images/p33.png)
+![Sketch](images/p31.png)
 
 Use a loop, rect and the HSB colour space:
 
