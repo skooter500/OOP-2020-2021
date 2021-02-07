@@ -39,6 +39,46 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 3 - Git, the if statement and loops in Java
+
+# Lecture 
+- [Read the git manual]
+- The if statement
+- While loops
+- For loops
+
+## Procedural drawing exercises:
+
+### if statement (click for video):
+
+[![YouTube](http://img.youtube.com/vi/P4JCE1oKjGs/0.jpg)](https://www.youtube.com/watch?v=P4JCE1oKjGs)
+
+### Loops (images):
+
+Use a loop rect and the HSB colour space:
+
+![Sketch](images/p33.png)
+
+Use ellipse to draw this:
+
+![Sketch](images/p34.png)
+
+Use a nested loop (a loop inside a loop) to draw this:
+
+![Sketch](images/p32.png)
+
+Try and draw this using ONE for loop:
+
+![Sketch](images/p27.png)
+
+Use sin and cos to draw this:
+
+![Sketch](images/p30.png)
+
+Write a sketch that can draw regular polygons like squares, pentagons, octogons etc:
+
+![Sketch](images/p10.png)
+
 # Week 2 - Hello Processing
 
 ## Tutorial
