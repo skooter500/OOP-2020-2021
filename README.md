@@ -42,7 +42,7 @@ Resources
 # Week 3 - Git, the if statement and loops in Java
 
 # Lecture 
-- [Read the git manual]
+- [Read the git manual](https://git-scm.com/docs/user-manual.html)
 - The if statement
 - While loops
 - For loops
