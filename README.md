@@ -61,7 +61,7 @@ Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p31.png)
 
-Use a loop, rect and the HSB colour space:
+Use a loop, ellipse, and the HSB colour space:
 
 ![Sketch](images/p34.png)
 
@@ -69,7 +69,7 @@ Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p35.png)
 
-Use a loop rect and the HSB colour space:
+Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p36.png)
 
