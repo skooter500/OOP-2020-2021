@@ -50,9 +50,15 @@ public class Main
         String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new BugZap());
     }
+
+    public void loops()
+    {
+        String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new Loops());
+    }
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.bugZap();
+        main.loops();
     }
 } 
