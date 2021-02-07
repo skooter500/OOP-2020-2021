@@ -61,10 +61,6 @@ Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p31.png)
 
-Use a loop, ellipse, and the HSB colour space:
-
-![Sketch](images/p34.png)
-
 Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p35.png)
@@ -73,8 +69,11 @@ Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p36.png)
 
+Use a loop, ellipse, and the HSB colour space:
 
-Use ellipse, a loop and the HSB color space to draw this:
+![Sketch](images/p34.png)
+
+Use a loop, ellipse and the HSB color space to draw this:
 
 ![Sketch](images/p33.png)
 
@@ -82,8 +81,7 @@ Use ellipse, a nested loop and the HSB color space to draw this:
 
 ![Sketch](images/p34.png)
 
-
-Use a nested loop (a loop inside a loop) to draw this:
+Use a nested loop to draw this:
 
 ![Sketch](images/p32.png)
 
@@ -95,7 +93,7 @@ Use sin and cos to draw this:
 
 ![Sketch](images/p30.png)
 
-Write a sketch that can draw regular polygons like squares, pentagons, octogons etc:
+Use line, sin and cos to draw regular polygons like squares, pentagons, octogons etc:
 
 ![Sketch](images/p10.png)
 
