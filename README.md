@@ -49,23 +49,26 @@ Resources
 
 ## Procedural drawing exercises:
 
-### if statement (click for video):
+### if statement 
+
+- 4 exercises. Click the image for video:
 
 [![YouTube](http://img.youtube.com/vi/18kMOeygmHA/0.jpg)](https://www.youtube.com/watch?v=18kMOeygmHA)
 
-### Loops (images):
+### for loops:
 
 Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p33.png)
 
-Use a loop rect and the HSB colour space:
+Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p34.png)
 
-Use a loop rect and the HSB colour space:
+Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p35.png)
+
 Use a loop rect and the HSB colour space:
 
 ![Sketch](images/p36.png)
