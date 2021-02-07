@@ -49,6 +49,14 @@ Resources
 
 ## Procedural drawing exercises:
 
+Get the latest branches of the repo and create a branch called loops:
+
+```
+git checkout master
+git pull upstream master
+git checkout -b loops
+```
+
 ### if statement 
 
 - 4 exercises. Click the image for video:
