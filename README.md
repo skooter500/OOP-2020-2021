@@ -77,10 +77,6 @@ Use a loop, ellipse and the HSB color space to draw this:
 
 ![Sketch](images/p33.png)
 
-Use ellipse, a nested loop and the HSB color space to draw this:
-
-![Sketch](images/p34.png)
-
 Use a nested loop to draw this:
 
 ![Sketch](images/p32.png)
