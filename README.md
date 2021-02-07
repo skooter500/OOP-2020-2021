@@ -73,9 +73,15 @@ Use a loop rect and the HSB colour space:
 
 ![Sketch](images/p36.png)
 
+
 Use ellipse, a loop and the HSB color space to draw this:
 
+![Sketch](images/p33.png)
+
+Use ellipse, a nested loop and the HSB color space to draw this:
+
 ![Sketch](images/p34.png)
+
 
 Use a nested loop (a loop inside a loop) to draw this:
 
