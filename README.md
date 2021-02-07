@@ -51,15 +51,26 @@ Resources
 
 ### if statement (click for video):
 
-[![YouTube](http://img.youtube.com/vi/P4JCE1oKjGs/0.jpg)](https://www.youtube.com/watch?v=P4JCE1oKjGs)
+[![YouTube](http://img.youtube.com/vi/18kMOeygmHA/0.jpg)](https://www.youtube.com/watch?v=18kMOeygmHA)
 
 ### Loops (images):
 
-Use a loop rect and the HSB colour space:
+Use a loop, rect and the HSB colour space:
 
 ![Sketch](images/p33.png)
 
-Use ellipse to draw this:
+Use a loop rect and the HSB colour space:
+
+![Sketch](images/p34.png)
+
+Use a loop rect and the HSB colour space:
+
+![Sketch](images/p35.png)
+Use a loop rect and the HSB colour space:
+
+![Sketch](images/p36.png)
+
+Use ellipse, a loop and the HSB color space to draw this:
 
 ![Sketch](images/p34.png)
 
