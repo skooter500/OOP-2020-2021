@@ -46,6 +46,7 @@ Resources
 - The if statement
 - While loops
 - For loops
+- [Video of the class](https://web.microsoftstream.com/video/11af5059-42a8-4321-99f1-ac2d8f4d78e2)
 
 ## Procedural drawing exercises:
 
