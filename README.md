@@ -56,7 +56,7 @@ Resources
 
 Update your forks of the repo to get the code we wrote on Monday and create a branch for your work today. Don't commit onto the master branch!
 
-Complete the procedural drawing exercises below. You can check the value of the "which" variable which will be in the range 0-9 and use this to determine which exercise gets drawn. There are > 12 exercises so some of the numbers will have to draw more than one exercise. 
+Complete the procedural drawing exercises below by editing the file Loops.java. You can check the value of the "which" variable which will be in the range 0-9 and use this to determine which exercise gets drawn. There are > 12 exercises so some of the numbers will have to draw more than one exercise. 
 
 ## Procedural drawing exercises:
 
