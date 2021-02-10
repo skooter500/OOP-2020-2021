@@ -84,6 +84,19 @@ public class Loops extends PApplet {
                     ellipse(w / 2 + (i * w), cy, w, w);
                 }
             }
+            case 4:
+                int numLines = 5;
+                float theta = TWO_PI / (float) numLines;
+                float radius = 100;
+                for(int i = 0 ; i < numLines ; i ++)
+                {
+                    float angle = theta * i;
+                    float x = sin(angle) * radius;
+                    float y = cos(angle) * radius;
+                    line(cx, cy, cx + x, cy + y);
+
+                }
+
             break;
         }
     }
