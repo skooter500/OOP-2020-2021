@@ -60,14 +60,6 @@ Complete the procedural drawing exercises below. You can check the value of the 
 
 ## Procedural drawing exercises:
 
-Get the latest branches of the repo and create a branch called loops:
-
-```
-git checkout master
-git pull upstream master
-git checkout -b loops
-```
-
 ### if statement 
 
 - 3 exercises. Click the image for video:
@@ -100,7 +92,7 @@ Use a nested loop to draw this:
 
 ![Sketch](images/p32.png)
 
-Try and draw this using ONE for loop. You will need the [text]() and [textAlign]() functions:
+Try and draw this using ONE for loop. You will need the [text](https://processing.org/reference/text_.html) and [textAlign](https://processing.org/reference/textAlign_.html) functions:
 
 ![Sketch](images/p27.png)
 
