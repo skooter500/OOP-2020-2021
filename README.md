@@ -41,7 +41,8 @@ Resources
 
 # Week 4 - Arrays
 - [Video of the class](https://web.microsoftstream.com/video/7617735a-c42f-49c3-942f-a85b106b78d1)
-- Check out ARrays.java
+- [map](https://processing.org/reference/map_.html)
+- Check out Arrays.java
 
 # Week 3 - Git, the if statement and loops in Java
 
