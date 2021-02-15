@@ -46,20 +46,23 @@ Resources
 - The if statement
 - While loops
 - For loops
+- [Video of the class](https://web.microsoftstream.com/video/11af5059-42a8-4321-99f1-ac2d8f4d78e2)
+- [Markdown tutorial](https://github.com/skooter500/MusicVisuals)
+
+## Lab
+### Learning outcomes
+- Practice procedural drawing with loops
+- Develop computational thinking skills, by making variables and constructing algorithms
+
+Update your forks of the repo to get the code we wrote on Monday and create a branch for your work today. Don't commit onto the master branch!
+
+Complete the procedural drawing exercises below by editing the file Loops.java. You can check the value of the "which" variable which will be in the range 0-9 and use this to determine which exercise gets drawn. There are > 12 exercises so some of the numbers will have to draw more than one exercise. 
 
 ## Procedural drawing exercises:
 
-Get the latest branches of the repo and create a branch called loops:
-
-```
-git checkout master
-git pull upstream master
-git checkout -b loops
-```
-
 ### if statement 
 
-- 4 exercises. Click the image for video:
+- 3 exercises. Click the image for video:
 
 [![YouTube](http://img.youtube.com/vi/18kMOeygmHA/0.jpg)](https://www.youtube.com/watch?v=18kMOeygmHA)
 
@@ -89,9 +92,13 @@ Use a nested loop to draw this:
 
 ![Sketch](images/p32.png)
 
-Try and draw this using ONE for loop:
+Try and draw this using ONE for loop. You will need the [text](https://processing.org/reference/text_.html) and [textAlign](https://processing.org/reference/textAlign_.html) functions:
 
 ![Sketch](images/p27.png)
+
+Use a nested loop to draw this:
+
+![Sketch](images/p23.png)
 
 Use sin and cos to draw this:
 
@@ -100,6 +107,10 @@ Use sin and cos to draw this:
 Use line, sin and cos to draw regular polygons like squares, pentagons, octogons etc:
 
 ![Sketch](images/p10.png)
+
+Draw a procedural star like these:
+
+![Sketch](images/p5.png)
 
 # Week 2 - Hello Processing
 
