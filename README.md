@@ -39,6 +39,11 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 4 - Arrays
+- [Video of the class](https://web.microsoftstream.com/video/7617735a-c42f-49c3-942f-a85b106b78d1)
+- [map](https://processing.org/reference/map_.html)
+- Check out Arrays.java
+
 # Week 3 - Git, the if statement and loops in Java
 
 # Tutorial 
