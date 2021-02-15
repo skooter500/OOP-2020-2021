@@ -41,6 +41,9 @@ Resources
 
 # Week 3 - Git, the if statement and loops in Java
 
+# Tutorial 
+- [Video of the tutorial going through the lab solution](https://web.microsoftstream.com/video/3dd5eda0-e34a-4e05-b442-990a0327cc45)
+
 # Lecture 
 - [Read the git manual](https://git-scm.com/docs/user-manual.html)
 - The if statement
