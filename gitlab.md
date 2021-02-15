@@ -188,4 +188,4 @@ Merge conflicts on binary files
   - You can type these commands multiple times if you want to just swicth between the two versions to compare them.
 - When you are done, add, commit and push your changes
 
-Congratulations! I suggest you finish the lab by setting your assignment up on git
+Congratulations! Don't forget to read [the first three chapters](https://git-scm.com/docs/user-manual) of the git manual.
