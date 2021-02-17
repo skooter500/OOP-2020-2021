@@ -67,13 +67,17 @@ When you are doing these, make sure your code works even if you change the size 
 
 	![Sketch](images/p38.png)
 
-  This one is a bit trickier because you have to calculate the start xy and end xy for each line. Your for loop for drawing the trend lines should probably start at 1 instead of 0 and then you can get the previous value for the start of each line by taking rainfall[i - 1].
+  This one is a bit trickier because you have to calculate the start xy and end xy for each line. Your for loop for drawing the trend lines can start at 1 instead of 0 and then you can get the previous value for the start of each line by taking rainfall[i - 1].
 
 - A pie chart 
 
 	![Sketch](images/p39.png)
 
-	You can use the the [arc function](https://processing.org/reference/arc_.html) to draw arcs and sin & cos to calculate the x and y coordinates to print the text
+	You can use the the [arc function](https://processing.org/reference/arc_.html) to draw arcs and sin & cos to calculate the x and y coordinates to print the text. This one is the most challenging. Remember that a pie chart shows the proportion of each data point in the sum of all the data, so you will have to calculate the sum of all the rain fall and figure out how much each month is relative to the sum. It's best to draw the segments first and then draw the labels. Your map function might look something like this:
+
+	```Java
+	float angle = map(rainfall[i], 0, sum, 0, TWO_PI);
+	```
 
 Don't forget to update your forks of the repository from my master branch and create a new branch for your work today!!
 
