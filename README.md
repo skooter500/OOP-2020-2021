@@ -52,23 +52,27 @@ Check out this video of the assignment I wrote in GWBasic for the statistics mod
 
 And here is the [source code](https://github.com/skooter500/StatsAssignment) in case you are interested!
 
-Inspired by that, see if you can write code to generate the following graphs of the rainfall data. Start with the file Arrays.java
+Inspired by the video, see if you can write code to generate the following graphs of the rainfall data. Start with the file Arrays.java. You will find these much easier if you use the [map function](https://processing.org/reference/map_.html) we learned in Monday's class. 
+
+When you are doing these, make sure your code works even if you change the size of the drawing window or change the values in the array.
 
 - A bar chart:
 
   ![Sketch](images/p37.png)
 
+  Use the HSB color space to assign different colors to each bar
+
 - A trend line:
 
-  ![Sketch](images/p38.png)
+	![Sketch](images/p38.png)
 
-Advanced:
+  This one is a bit trickier because you have to calculate the start xy and end xy for each line.
 
-Try and draw a pie chart!
+- A pie chart! 
 
-![Sketch](images/p39.png)
+	![Sketch](images/p39.png)
 
-Hint! for the bar chart, it might be useful to allocate a third array to hold the colours. You an use random colours so that every month has a different colour.
+	You can use the the [arc function](https://processing.org/reference/arc_.html) to draw arcs and sin & cos to calculate the x and y coordinates to print the text
 
 Don't forget to update your forks of the repository from my master branch and create a new branch for your work today!!
 
