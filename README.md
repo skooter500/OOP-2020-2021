@@ -85,6 +85,7 @@ Don't forget to update your forks of the repository from my master branch and cr
 - [Video of the class](https://web.microsoftstream.com/video/7617735a-c42f-49c3-942f-a85b106b78d1)
 - [map](https://processing.org/reference/map_.html)
 - Check out Arrays.java
+- [Arrays in Java reference](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
 
 # Week 3 - Git, the if statement and loops in Java
 
