@@ -40,16 +40,49 @@ Resources
 - https://github.com/skooter500/OOP-LabTest1-2016
 
 # Week 4 - Arrays
+
+## Lab 
+### Learning Outcomes
+- Practice iterating over arrays
+- Practice computational thinking
+
+Check out this video of the assignment I wrote in GWBasic for the statistics module in first year WMT in Kevin St in 1990:
+
+[![YouTube](http://img.youtube.com/vi/p3Vui6q_wPw/0.jpg)](https://www.youtube.com/watch?v=p3Vui6q_wPw)
+
+And here is the [source code](https://github.com/skooter500/StatsAssignment) in case you are interested!
+
+Inspired by that, see if you can write code to generate the following graphs of the rainfall data:
+
+- A bar chart:
+
+  ![Sketch](images/p11.png)
+
+- A trend line:
+
+  ![Sketch](images/p12.png)
+
+Advanced:
+
+Try and draw a pie chart!
+
+![Sketch](images/p25.png)
+
+Hint! for the bar chart, it might be useful to allocate a third array to hold the colours. You an use random colours so that every month has a different colour.
+
+Don't forget to update your forks of the repository from my master branch and create a new branch for your work today!!
+
+## Lecture
 - [Video of the class](https://web.microsoftstream.com/video/7617735a-c42f-49c3-942f-a85b106b78d1)
 - [map](https://processing.org/reference/map_.html)
 - Check out Arrays.java
 
 # Week 3 - Git, the if statement and loops in Java
 
-# Tutorial 
+## Tutorial 
 - [Video of the tutorial going through the lab solution](https://web.microsoftstream.com/video/3dd5eda0-e34a-4e05-b442-990a0327cc45)
 
-# Lecture 
+## Lecture 
 - [Read the git manual](https://git-scm.com/docs/user-manual.html)
 - The if statement
 - While loops
