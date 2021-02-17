@@ -46,13 +46,13 @@ Resources
 - Practice iterating over arrays
 - Practice computational thinking
 
-Check out this video of the assignment I wrote in GWBasic for the statistics module in first year WMT in Kevin St in 1990:
+Check out this video of the assignment I wrote in GWBasic for the statistics module in first year WMT in Kevin St in 1990 (click the image for video):
 
 [![YouTube](http://img.youtube.com/vi/p3Vui6q_wPw/0.jpg)](https://www.youtube.com/watch?v=p3Vui6q_wPw)
 
 And here is the [source code](https://github.com/skooter500/StatsAssignment) in case you are interested!
 
-Inspired by the video, see if you can write code to generate the following graphs of the rainfall data. Start with the file Arrays.java. You will find these much easier if you use the [map function](https://processing.org/reference/map_.html) we learned in Monday's class. 
+Inspired by the video, see if you can write code to generate the following graphs of the rainfall data. Start with the file Arrays.java. You will find these *much easier* if you use the [map function](https://processing.org/reference/map_.html) we learned in Monday's class. 
 
 When you are doing these, make sure your code works even if you change the size of the drawing window or change the values in the array.
 
@@ -60,15 +60,16 @@ When you are doing these, make sure your code works even if you change the size 
 
   ![Sketch](images/p37.png)
 
+  Start by drawing the axis, then draw the ticks and print the text, then draw the bars. You can use ```textAlign(CENTER, CENTER)``` to align the text
   Use the HSB color space to assign different colors to each bar
 
 - A trend line:
 
 	![Sketch](images/p38.png)
 
-  This one is a bit trickier because you have to calculate the start xy and end xy for each line.
+  This one is a bit trickier because you have to calculate the start xy and end xy for each line. Your for loop for drawing the trend lines should probably start at 1 instead of 0 and then you can get the previous value for the start of each line by taking rainfall[i - 1].
 
-- A pie chart! 
+- A pie chart 
 
 	![Sketch](images/p39.png)
 
