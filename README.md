@@ -52,21 +52,21 @@ Check out this video of the assignment I wrote in GWBasic for the statistics mod
 
 And here is the [source code](https://github.com/skooter500/StatsAssignment) in case you are interested!
 
-Inspired by that, see if you can write code to generate the following graphs of the rainfall data:
+Inspired by that, see if you can write code to generate the following graphs of the rainfall data. Start with the file Arrays.java
 
 - A bar chart:
 
-  ![Sketch](images/p11.png)
+  ![Sketch](images/p37.png)
 
 - A trend line:
 
-  ![Sketch](images/p12.png)
+  ![Sketch](images/p38.png)
 
 Advanced:
 
 Try and draw a pie chart!
 
-![Sketch](images/p25.png)
+![Sketch](images/p39.png)
 
 Hint! for the bar chart, it might be useful to allocate a third array to hold the colours. You an use random colours so that every month has a different colour.
 

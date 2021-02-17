@@ -84,7 +84,11 @@ public class Arrays extends PApplet {
         // What is the total rainfall?
         // What is the average rainfall??
 
+        float sum = 0;
+        int minIndex = 0;
+        int maxIndex = 0;
         sum = 0;
+        float average = 0;
         for (int i = 0; i < rainfall.length; i++) {
             if (rainfall[i] < rainfall[minIndex]) {
                 minIndex = i;
@@ -115,12 +119,6 @@ public class Arrays extends PApplet {
         }
     }
 
-    int minIndex = 0;
-    int maxIndex = 0;
-    float average;
-    float sum;
-
-    float offset = 0;
 
     public void draw() {
         background(0);
@@ -190,9 +188,9 @@ public class Arrays extends PApplet {
                 // Draw the trend line
                 for(int i = 1 ; i < rainfall.length; i ++)
                 {                    
-                    float x1 = map(i-1, 0, rainfall.length, border+1, width - border);
+                    float x1 = map(i-1, 0, rainfall.length-1, border + (w/2), width - border - (w/2));
                     float y1 = map(rainfall[i-1], 0, range, height - border, border);
-                    float x2 = map(i, 0, rainfall.length, border+1, width - border);
+                    float x2 = map(i, 0, rainfall.length-1, border + (w/2), width - border - (w/2));
                     float y2 = map(rainfall[i], 0, range, height - border, border);
                     line(x1, y1, x2, y2);
                 }
