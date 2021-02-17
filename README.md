@@ -39,12 +39,60 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 4 - Arrays
+
+## Lab 
+### Learning Outcomes
+- Practice iterating over arrays
+- Practice computational thinking
+
+Check out this video of the assignment I wrote in GWBasic for the statistics module in first year WMT in Kevin St in 1990 (click the image for video):
+
+[![YouTube](http://img.youtube.com/vi/p3Vui6q_wPw/0.jpg)](https://www.youtube.com/watch?v=p3Vui6q_wPw)
+
+And here is the [source code](https://github.com/skooter500/StatsAssignment) in case you are interested!
+
+Inspired by the video, see if you can write code to generate the following graphs of the rainfall data. Start with the file Arrays.java. You will find these *much easier* if you use the [map function](https://processing.org/reference/map_.html) we learned in Monday's class. 
+
+When you are doing these, make sure your code works even if you change the size of the drawing window or change the values in the array.
+
+- A bar chart:
+
+  ![Sketch](images/p37.png)
+
+  Start by drawing the axis, then draw the ticks and print the text, then draw the bars. You can use ```textAlign(CENTER, CENTER)``` to align the text
+  Use the HSB color space to assign different colors to each bar
+
+- A trend line:
+
+	![Sketch](images/p38.png)
+
+  This one is a bit trickier because you have to calculate the start xy and end xy for each line. Your for loop for drawing the trend lines can start at 1 instead of 0 and then you can get the previous value for the start of each line by taking rainfall[i - 1].
+
+- A pie chart 
+
+	![Sketch](images/p39.png)
+
+	You can use the the [arc function](https://processing.org/reference/arc_.html) to draw arcs and sin & cos to calculate the x and y coordinates to print the text. This one is the most challenging. Remember that a pie chart shows the proportion of each data point in the sum of all the data, so you will have to calculate the sum of all the rain fall and figure out how much each month is relative to the sum. It's best to draw the segments first and then draw the labels. Your map function might look something like this:
+
+	```Java
+	float angle = map(rainfall[i], 0, sum, 0, TWO_PI);
+	```
+
+Don't forget to update your forks of the repository from my master branch and create a new branch for your work today!!
+
+## Lecture
+- [Video of the class](https://web.microsoftstream.com/video/7617735a-c42f-49c3-942f-a85b106b78d1)
+- [map](https://processing.org/reference/map_.html)
+- Check out Arrays.java
+- [Arrays in Java reference](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+
 # Week 3 - Git, the if statement and loops in Java
 
-# Tutorial 
+## Tutorial 
 - [Video of the tutorial going through the lab solution](https://web.microsoftstream.com/video/3dd5eda0-e34a-4e05-b442-990a0327cc45)
 
-# Lecture 
+## Lecture 
 - [Read the git manual](https://git-scm.com/docs/user-manual.html)
 - The if statement
 - While loops

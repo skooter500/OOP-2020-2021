@@ -194,6 +194,7 @@ public class Loops extends PApplet {
                         ellipse((w / 2) + w * j, (w / 2) + w * i, w, w);
                     }
                 }
+                break;
             }
             case 8:
             {
@@ -210,7 +211,11 @@ public class Loops extends PApplet {
                     line(cx + x1, cy + y1, cx + x2, cy + y2);
                 }
             }
+<<<<<<< HEAD
 >>>>>>> 4234dbe7c2dbecc05eac35d4d0a6fc0d6067cfaa
+=======
+            break;
+>>>>>>> 8929d895bf36ad3434fedc7c034592dcd8f0d454
         }
     }
 }
