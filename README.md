@@ -44,6 +44,7 @@ Resources
 - [3D Game of Life](https://www.youtube.com/watch?v=dQJ5aEsP6Fs)
 - [John Conway talks about the game of life](https://www.youtube.com/watch?v=FdMzngWchDk)
 - [Video of the class](https://web.microsoftstream.com/video/d621064f-86c0-4f76-8a12-b5b9ab4cfa18)
+- [The Dream of Life](https://www.youtube.com/watch?v=wU0PYcCsL6o)
 
 There is a bug in the code we wrote in the class:
 
