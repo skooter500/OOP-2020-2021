@@ -28,7 +28,6 @@ public class Arrays extends PApplet {
         }
     }
     
-    // Return the sum of all the elements in an array
     float sum(float[] array) {
         float sum = 0;
         for (float r : array) {
@@ -126,13 +125,103 @@ public class Arrays extends PApplet {
         switch (mode) {
             case 0: {
                 // Bar chart
+                // Draw the axis
+                float border = width * 0.1f;
+                float range = 120;
+                stroke(255);
+                line(border, border, border, height - border);
+                line(border, height - border, width - border, height - border);
+                // Draw the vertical tick marks
+                textAlign(CENTER, CENTER);
+                colorMode(HSB);
+                for(float f = 0; f <= range ; f += 10)
+                {
+                    float y = map(f, 0, range, height - border, border);
+                    line(border - 5, y, border, y);
+                    fill(255);
+                    text((int) f, border * 0.5f, y);
+                }    
+                // Draw the bars & the labels
+                float w = (width - (border * 2)) / rainfall.length;
+                for(int i = 0 ; i < rainfall.length; i ++)
+                {
+                    float x = map(i, 0, rainfall.length, border+1, width - border);
+                    float h = map(rainfall[i], 0, range, 0, height - (border * 2));
+                    float c = map(i, 0, rainfall.length, 0, 255);
+                    fill(c, 255, 255);
+                    rect(x, height - border - 1, w, - h);
+                    fill(255);
+                    text(months[i], x + (w * 0.5f), height - (border * 0.5f));
+                }
+                fill(255);
+                text("Rainfall Bar Chart", width / 2, border / 2);
                 break;
+                // Draw the title
+                
             }
             case 1: {
-                // Trend line
+                // Bar chart
+                // Draw the axis
+                float border = width * 0.1f;
+                float range = 120;
+                stroke(255);
+                line(border, border, border, height - border);
+                line(border, height - border, width - border, height - border);
+                // Draw the vertical tick marks
+                textAlign(CENTER, CENTER);
+                colorMode(HSB);
+                for(float f = 0; f <= range ; f += 10)
+                {
+                    float y = map(f, 0, range, height - border, border);
+                    line(border - 5, y, border, y);
+                    fill(255);
+                    text((int) f, border * 0.5f, y);
+                }    
+                // Draw the labels
+                float w = (width - (border * 2)) / rainfall.length;
+                for(int i = 0 ; i < rainfall.length; i ++)
+                {                    
+                    float x = map(i, 0, rainfall.length, border+1, width - border);
+                    fill(255);
+                    text(months[i], x + (w * 0.5f), height - (border * 0.5f));
+                }
+                // Draw the trend line
+                for(int i = 1 ; i < rainfall.length; i ++)
+                {                    
+                    float x1 = map(i-1, 0, rainfall.length-1, border + (w/2), width - border - (w/2));
+                    float y1 = map(rainfall[i-1], 0, range, height - border, border);
+                    float x2 = map(i, 0, rainfall.length-1, border + (w/2), width - border - (w/2));
+                    float y2 = map(rainfall[i], 0, range, height - border, border);
+                    line(x1, y1, x2, y2);
+                }
+                fill(255);
+                text("Rainfall Trend Chart", width / 2, border / 2);
+                break;
             }
             case 2: {
-                // Pie chart
+                float border = width * 0.1f;                
+                float sum = sum(rainfall);
+                float thetaPrev = 0;
+                float cx = width / 2;
+                float cy = height / 2;
+                for(int i = 0 ; i < rainfall.length ; i ++)
+                {
+                    float theta = map(rainfall[i], 0, sum, 0, TWO_PI);
+                    textAlign(CENTER);
+                    float thetaNext = thetaPrev + theta;
+                    float radius = cx * 0.6f;       
+                    float x = cx + sin(thetaPrev + (theta * 0.5f) + HALF_PI) * radius;      
+                    float y = cy - cos(thetaPrev + (theta * 0.5f) + HALF_PI) * radius;
+                    fill(255);
+                    text(months[i], x, y);             
+                    float c = map(i, 0, rainfall.length, 0, 255);
+                    fill(c, 255, 255);       
+                    stroke(255);
+                    arc(cx, cy, cx, cy, thetaPrev, thetaNext);
+                    thetaPrev = thetaNext;
+                }
+                fill(255);
+                text("Rainfall piechart", width / 2, border / 2);
             }
         }
     }

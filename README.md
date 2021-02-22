@@ -41,6 +41,9 @@ Resources
 
 # Week 4 - Arrays
 
+- [Tutorial Video 1](https://web.microsoftstream.com/video/0733d852-294b-4e45-b6e8-253ffba434d1?list=studio)
+- [Tutorial Video 2](https://web.microsoftstream.com/video/7991059b-bc69-4f04-9521-bc4832eb3432?list=studio)
+
 ## Lab 
 ### Learning Outcomes
 - Practice iterating over arrays
