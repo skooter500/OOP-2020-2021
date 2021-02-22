@@ -14,6 +14,7 @@ public class Life extends PApplet {
 
     public void setup() {
         colorMode(RGB);
+        size(500, 500);
     }
 
 
