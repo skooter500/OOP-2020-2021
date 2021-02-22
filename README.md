@@ -39,6 +39,31 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 5 - Conway's Game of Life
+- [Epic Conways Game of Life](https://www.youtube.com/watch?v=C2vgICfQawE)
+- [3D Game of Life](https://www.youtube.com/watch?v=dQJ5aEsP6Fs)
+- [John Conway talks about the game of life](https://www.youtube.com/watch?v=FdMzngWchDk)
+- [Video of the class](https://web.microsoftstream.com/video/d621064f-86c0-4f76-8a12-b5b9ab4cfa18)
+
+There is a bug in the code we wrote in the class:
+
+The bounds checking on the arrays we wrote in the class is:
+
+```
+if (row > 0 && row < size -1 && col > 0 && col < size -1)
+```
+
+And it should be
+
+```
+if (row >= 0 && row < size -1 && col >= 0 && col < size -1)
+        
+```
+
+Thanks to Luke O Shea Scanlan for pointing this out!
+
+I pushed the corrected code to the repository
+
 # Week 4 - Arrays
 
 - [Tutorial Video 1](https://web.microsoftstream.com/video/0733d852-294b-4e45-b6e8-253ffba434d1?list=studio)
