@@ -13,7 +13,7 @@ public class Life extends PApplet {
     public int countCellsAround(int row, int col)
     {
         int count = 0;
-        
+        /*
         for(int r = row -1 ; r <= row + 1; r ++)
         {
             for(int c = col -1 ; c <= col + 1; c ++)
@@ -23,13 +23,14 @@ public class Life extends PApplet {
                     if (getCell(board, r, c))
                     {
                         count ++;
+
                     }
                 }
             }
-        }
+        }*/
 
         // OR Use 8 if statements
-        /*
+        
         if (getCell(board, row-1, col-1))
         {
             count ++;
@@ -62,7 +63,7 @@ public class Life extends PApplet {
         {
             count ++;
         }
-        */
+        
         
         return count;
     }
