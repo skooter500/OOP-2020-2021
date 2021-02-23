@@ -68,16 +68,16 @@ This is important so please read carefully!!
 
 You have to read values from *board*, but you set values in *next*, which is a 2D array the same size as board. At the end of the method you *swap* board and next. I have left the swapping code in the method, so you don't have to write it. This is so that when you for example kill a cell or bring a cell to life, you don't screw up the count for other cells in that generation.
 
-Your game of life should like like this if you implement the rules correctly:
-
-[![YouTube](http://img.youtube.com/vi/SmH2r_ChmFY/0.jpg)](https://www.youtube.com/watch?v=SmH2r_ChmFY)
-
 Again - 
 
 1. Write a nested for loop that gets the row and col for every cell
 2. Count the neighbours 
 2. Check if the cell is alive, apply the rules for alive cells to next
 2. If the cell is dead, apply the rules for dead cells to next
+
+Your game of life should look like this if you implement the rules correctly:
+
+[![YouTube](http://img.youtube.com/vi/SmH2r_ChmFY/0.jpg)](https://www.youtube.com/watch?v=SmH2r_ChmFY)
 
 Some extra things you can implement you can see in the video:
 
