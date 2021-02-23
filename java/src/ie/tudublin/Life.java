@@ -9,16 +9,6 @@ public class Life extends PApplet {
     boolean[][] board = new boolean[size][size];
     boolean[][] next = new boolean[size][size];
 
-    public void makeCross()
-    {
-        for(int i = 0 ; i < size ; i ++)
-        {
-            setCell(board, size / 2, i, true);
-            setCell(board, i, size / 2, true);
-        }
-    }
-
-
     public int countNeighbours(int row, int col)
     {
         int count = 0;
