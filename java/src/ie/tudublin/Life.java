@@ -7,18 +7,18 @@ public class Life extends PApplet {
     int size = 100;
     float cellSize;
     boolean[][] board = new boolean[size][size];
+    boolean[][] next = new boolean[size][size];
 
 
     public int countCellsAround(int row, int col)
     {
         int count = 0;
-
-        /*
+        
         for(int r = row -1 ; r <= row + 1; r ++)
         {
             for(int c = col -1 ; c <= col + 1; c ++)
             {
-                if (r != row && c != col)
+                if (! (r == row && c == col))
                 {
                     if (getCell(board, r, c))
                     {
@@ -27,7 +27,9 @@ public class Life extends PApplet {
                 }
             }
         }
-        */
+
+        // OR Use 8 if statements
+        /*
         if (getCell(board, row-1, col-1))
         {
             count ++;
@@ -60,7 +62,7 @@ public class Life extends PApplet {
         {
             count ++;
         }
-        
+        */
         
         return count;
     }
@@ -156,11 +158,13 @@ public class Life extends PApplet {
 
     public void setup() {
         colorMode(RGB);
-        //randomize();
+        randomize();
+        
+        /*
         board[0][1] = true;
         board[1][2] = true;
         board[3][2] = true;
-
+        */
         println(countCellsAround(0, 2));
 
         cellSize = width / (size);
@@ -168,9 +172,15 @@ public class Life extends PApplet {
         //printBoard(board);        
     }
 
+    private void updateBoard()
+    {
+
+    }
+
 
     public void draw() {
         background(0);
         drawBoard(board);
+        updateBoard();
     }
 }
