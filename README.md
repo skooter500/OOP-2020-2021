@@ -59,6 +59,8 @@ Should have been:
 if (! (r == row && c == col))                
 ```
 
+In Life.java:
+
 Write the method ```updateBoard```. This method should iterate over the board cell by cell using a nested for loop and apply the Game of Life rules:
 
 1. If the cell is alive (true) then if the cell has exactly 2 or 3 neighbours it survives (gets set to true), otherwise it dies (gets set to false)
