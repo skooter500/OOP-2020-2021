@@ -71,17 +71,18 @@ You have to read values from *board*, but you set values in *next*, which is a 2
 Again - in ```updateBoard```
 
 1. Write a nested for loop that gets the row and col for every cell
-2. Count the neighbours 
+2. Count the neighbours (use the method we wrote on Monday for this) 
 2. Check if the cell is alive, apply the rules for alive cells to next
 2. If the cell is dead, apply the rules for dead cells to next
 2. Swap board and next
 
-Your game of life should look like this if you implement the rules correctly:
+Your game of life should look like this if you implement the rules correctly (click the image for a video):
 
 [![YouTube](http://img.youtube.com/vi/SmH2r_ChmFY/0.jpg)](https://www.youtube.com/watch?v=SmH2r_ChmFY)
 
 Some extra things you can implement you can see in the video:
 
+- Increase size and change the size of the screen and see what effect this has on the simulation 
 - Press space to pause and resume the simulation
 - Press 1 to randomise the board again
 - Press 2 to clear the board
