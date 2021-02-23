@@ -40,6 +40,63 @@ Resources
 - https://github.com/skooter500/OOP-LabTest1-2016
 
 # Week 5 - Conway's Game of Life
+
+## Lab
+### Learning Outcomes
+- Learn how to iterate over a 2D array
+- Explore the magic of cellular automata
+- Learn how to use map
+
+Update your fork of the repo from the master branch to get the bug fixed code from Monday's class. I discovered another bug! In countNeighbours, the line:
+
+```Java
+if (r != row && c != col)                
+```
+
+Should have been:
+
+```Java
+if (! (r == row && c == col))                
+```
+
+Task 1:
+
+Write the method ```updateBoard```. This method should iterate over the board cell by cell using a nested for loop and apply the game of life rules:
+
+1. If the cell is alive (true) then if the cell has exactly 2 or 3 neighbours it survives, otherwise it dies (gets set to false)
+2. If the cell is dead (false) then it comes to life if it has exactly 3 neighbours, otherwise it stays dead in the next generation
+
+This is important so please read carefully!!
+
+You have to read values from *board*, but you set values in *next*, which is a 2D array the same size as board . At the end of the method you swap board and next. I have left the swapping code in the method, so you don't have to write it. This is so that when you for example kill a cell or bring a cell to life, you don't screw up the count for other cells in that generation.
+
+Your game of life should like like this if you implement the rules correctly:
+
+[![YouTube](http://img.youtube.com/vi/SmH2r_ChmFY/0.jpg)](https://www.youtube.com/watch?v=SmH2r_ChmFY)
+
+Some extra things you can implement you can see in the video:
+
+- Press space to pause and resume the simulation
+- Press 1 to randomise the board again
+- Press 2 to clear the board
+- Press 3 to draw a cross shape and see how it evolves
+- Drag the mouse across the window to set cells at the mouse position to be alive.
+
+Some extra things you can implement that are not in the video
+
+- Draw a glider at the mouse position. This is starting pattern that will evolve a pattern that appears to move across the screen
+- Draw a Gosper Gun at the mouse position. This is a starting pattern that will spawn creatures indefinitely
+
+You can read more about these starting patterns in [this wikipedia article](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) and see examples in this video
+
+[![YouTube](http://img.youtube.com/vi/HMYh4jKdtNU/0.jpg)](https://www.youtube.com/watch?v=HMYh4jKdtNU)
+
+If you want to learn more about cellular automata check out 
+
+- [The Nature of Code](https://natureofcode.com/)
+- [A New Kind of Science](https://writings.stephenwolfram.com/2017/05/a-new-kind-of-science-a-15-year-view/)
+
+## Lecture
 - [Epic Conways Game of Life](https://www.youtube.com/watch?v=C2vgICfQawE)
 - [3D Game of Life](https://www.youtube.com/watch?v=dQJ5aEsP6Fs)
 - [John Conway talks about the game of life](https://www.youtube.com/watch?v=FdMzngWchDk)
