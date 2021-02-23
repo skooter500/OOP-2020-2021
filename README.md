@@ -68,7 +68,7 @@ Write the method ```updateBoard```. This method should iterate over the board ce
 
 This is important so please read carefully!!
 
-You have to read values from *board*, but you set values in *next*, which is a 2D array the same size as board. At the end of the method you *swap* board and next. I have left the swapping code in the method, so you don't have to write it. This is so that when you for example kill a cell or bring a cell to life, you don't screw up the count for other cells in that generation.
+You have to read values from *board*, but you set values in *next*, which is a 2D array the same size as board. At the end of the method you *swap* board and next. I have left the swapping code in the method, so you don't have to write it. This is so that when you for example, kill a cell or bring a cell to life, you don't screw up the count for other cells in that generation.
 
 Again - in ```updateBoard```
 
