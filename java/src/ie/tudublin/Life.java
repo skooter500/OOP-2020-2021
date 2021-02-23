@@ -156,37 +156,22 @@ public class Life extends PApplet {
     {
         size(500, 500);
     }
-
-    public void clear()
-    {
-        for(int row = 0 ; row < size ; row ++)
-        {
-            for (int col = 0 ; col < size ; col ++)
-            {
-                setCell(board, row, col, false);
-            }
-        }
-    }
     
     int mode = 0;
     boolean paused = false;
     public void keyPressed() {
         if (keyCode == ' ')
         {
-            paused = ! paused;
         }
         
         if (keyCode == '1')
         {
-            randomize();
         }
         if (keyCode == '2')
         {
-            clear();
         }
         if (keyCode == '3')
         {
-            makeCross();
         }
             
     }
@@ -209,35 +194,10 @@ public class Life extends PApplet {
 
     private void updateBoard()
     {
-        for(int row = 0 ; row < size ; row ++)
-        {
-            for (int col = 0 ; col < size ; col ++)
-            {
-                int count = countNeighbours(row, col);
-                if (getCell(board, row, col))
-                {
-                    if (count == 2 || count == 3)
-                    {
-                        next[row][col] = true;
-                    }
-                    else
-                    {
-                        next[row][col] = false;
-                    }
-                }
-                else
-                {
-                    if (count == 3)
-                    {
-                        next[row][col] = true;
-                    }
-                    else
-                    {
-                        next[row][col] = false;
-                    }
-                }
-            }
-        }
+        // Put code here to apply the rules!!
+
+        
+        // Swap board and next
         boolean[][] temp = board;
         board = next;
         next = temp;
@@ -245,17 +205,12 @@ public class Life extends PApplet {
 
     public void mouseDragged()
     {
-        int row = (int) map(mouseY, 0, height, 0, size);
-        int col = (int) map(mouseX, 0, width, 0, size);
-        setCell(board, row, col, true);
+        // This method gets called automatically when the mouse is dragged across the screen
     }
 
     public void draw() {
         background(0);
-        drawBoard(board);
-        if (!paused)
-        {
-            updateBoard();
-        }
+        drawBoard(board);        
+        updateBoard();
     }
 }
