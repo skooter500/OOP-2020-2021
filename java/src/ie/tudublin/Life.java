@@ -9,8 +9,17 @@ public class Life extends PApplet {
     boolean[][] board = new boolean[size][size];
     boolean[][] next = new boolean[size][size];
 
+    public void makeCross()
+    {
+        for(int i = 0 ; i < size ; i ++)
+        {
+            setCell(board, size / 2, i, true);
+            setCell(board, i, size / 2, true);
+        }
+    }
 
-    public int countCellsAround(int row, int col)
+
+    public int countNeighbours(int row, int col)
     {
         int count = 0;
         /*
@@ -148,13 +157,39 @@ public class Life extends PApplet {
     {
         size(500, 500);
     }
+
+    public void clear()
+    {
+        for(int row = 0 ; row < size ; row ++)
+        {
+            for (int col = 0 ; col < size ; col ++)
+            {
+                setCell(board, row, col, false);
+            }
+        }
+    }
     
     int mode = 0;
+    boolean paused = false;
     public void keyPressed() {
-        // the value of mode will be the number of the
-        // number key pressed
-        if (keyCode >= '0' && keyCode <= '9')
-            mode = keyCode - '0';
+        if (keyCode == ' ')
+        {
+            paused = ! paused;
+        }
+        
+        if (keyCode == '1')
+        {
+            randomize();
+        }
+        if (keyCode == '2')
+        {
+            clear();
+        }
+        if (keyCode == '3')
+        {
+            makeCross();
+        }
+            
     }
 
     public void setup() {
@@ -166,7 +201,7 @@ public class Life extends PApplet {
         board[1][2] = true;
         board[3][2] = true;
         */
-        println(countCellsAround(0, 2));
+        println(countNeighbours(0, 2));
 
         cellSize = width / (size);
         
@@ -175,13 +210,53 @@ public class Life extends PApplet {
 
     private void updateBoard()
     {
-
+        for(int row = 0 ; row < size ; row ++)
+        {
+            for (int col = 0 ; col < size ; col ++)
+            {
+                int count = countNeighbours(row, col);
+                if (getCell(board, row, col))
+                {
+                    if (count == 2 || count == 3)
+                    {
+                        next[row][col] = true;
+                    }
+                    else
+                    {
+                        next[row][col] = false;
+                    }
+                }
+                else
+                {
+                    if (count == 3)
+                    {
+                        next[row][col] = true;
+                    }
+                    else
+                    {
+                        next[row][col] = false;
+                    }
+                }
+            }
+        }
+        boolean[][] temp = board;
+        board = next;
+        next = temp;
     }
 
+    public void mouseDragged()
+    {
+        int row = (int) map(mouseY, 0, height, 0, size);
+        int col = (int) map(mouseX, 0, width, 0, size);
+        setCell(board, row, col, true);
+    }
 
     public void draw() {
         background(0);
         drawBoard(board);
-        updateBoard();
+        if (!paused)
+        {
+            updateBoard();
+        }
     }
 }
