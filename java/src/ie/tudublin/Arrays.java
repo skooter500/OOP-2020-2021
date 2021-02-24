@@ -37,7 +37,8 @@ public class Arrays extends PApplet {
     }
 
     public void settings() {
-        size(500, 500);
+        size(1000, 1000);
+
 
         // Testing the map function
         float f = map1(2, 0, 10, 0, width);
