@@ -138,7 +138,7 @@ public class Life extends PApplet {
             for (int col = 0 ; col < size ; col ++)
             {
                 float dice = random(0.0f, 1.0f);
-                /*
+                /*a
                 if (dice < 0.5)
                 {
                     board[row][col] = true;
