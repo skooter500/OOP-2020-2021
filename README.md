@@ -43,8 +43,8 @@ Resources
 
 ## Tutorial
 - [Video of the tutorial](https://web.microsoftstream.com/video/7dbf1ef3-3857-4952-b840-f27b3a3187a4)
-- [Life with no colors]
-- [The colorful Game of Life we made in the tutorial]
+- [Life with no colors](java/src/ie/tudublin/Life.java)
+- [The colorful Game of Life we made in the tutorial](java/src/ie/tudublin/ColorfulLife.java)
 
 ## Lab
 

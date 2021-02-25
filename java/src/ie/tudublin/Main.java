@@ -62,14 +62,22 @@ public class Main
         String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new Arrays());
     }
+    
     public void life()
     {
         String[] a = {"MAIN"};
         processing.core.PApplet.runSketch( a, new Life());
     }
+    
+    public void colorfulLife()
+    {
+        String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new ColorfulLife());
+    }
+
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.life();
+        main.colorfulLife();
     }
 } 

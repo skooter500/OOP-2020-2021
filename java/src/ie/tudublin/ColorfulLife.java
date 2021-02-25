@@ -2,22 +2,23 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
-public class Life extends PApplet {
+public class ColorfulLife extends PApplet {
 
-    int size = 100;
+    int size = 200;
     float cellSize;
-    boolean[][] board = new boolean[size][size];
-    boolean[][] next = new boolean[size][size];
+    float[][] board = new float[size][size];
+    float[][] next = new float[size][size];
 
-    public void makeCross()
+    public void clear()
     {
-        for(int i = 0 ; i < size ; i ++)
+        for(int row = 0 ; row < size ; row ++)
         {
-            setCell(board, size / 2, i, true);
-            setCell(board, i, size / 2, true);
+            for (int col = 0 ; col < size ; col ++)
+            {
+                setCell(board, row, col, -1);
+            }
         }
     }
-
 
     public int countNeighbours(int row, int col)
     {
@@ -29,7 +30,7 @@ public class Life extends PApplet {
             {
                 if (! (r == row && c == col))
                 {
-                    if (getCell(board, r, c))
+                    if (getCell(board, r, c) > 0)
                     {
                         count ++;
                     }
@@ -76,27 +77,27 @@ public class Life extends PApplet {
         return count;
     }
 
-    public void setCell(boolean[][] board, int row, int col, boolean b)
+    public void setCell(float[][] board, int row, int col, float b)
     {
-        if (row >= 0 && row < size -1 && col >= 0 && col < size -1)
+        if (row >= 0 && row < size && col >= 0 && col < size)
         {
             board[row][col] = b;
         }
     }
 
-    public boolean getCell(boolean[][] board, int row, int col)
+    public float getCell(float[][] board, int row, int col)
     {
-        if (row >= 0 && row < size -1 && col >= 0 && col < size -1)
+        if (row >= 0 && row < size && col >= 0 && col < size)
         {
             return board[row][col];
         }
         else
         {
-            return false;
+            return 0;
         }        
     }
 
-    public void drawBoard(boolean[][] board)
+    public void drawBoard(float[][] board)
     {
         // Use a nested loop
         // Use map to calculate x and y
@@ -109,8 +110,11 @@ public class Life extends PApplet {
             {
                 float x = map(col, 0, size, 0, width);
                 float y = map(row, 0, size, 0, height);
-                if (board[row][col])
+                float c = getCell(board, row, col);
+                if (c > 0 )
                 {
+                    noStroke();
+                    fill(c, 255, 255);
                     rect(x, y, cellSize, cellSize);
                 }
             }
@@ -147,25 +151,14 @@ public class Life extends PApplet {
                     board[row][col] = false;
                 }
                 */
-                board[row][col] = (dice < 0.5f) ? true : false;
+                board[row][col] = (dice < 0.5f) ? random(255) : -1;
             }
         }
     }
 
     public void settings()
     {
-        size(500, 500);
-    }
-
-    public void clear()
-    {
-        for(int row = 0 ; row < size ; row ++)
-        {
-            for (int col = 0 ; col < size ; col ++)
-            {
-                setCell(board, row, col, false);
-            }
-        }
+        size(800, 800);
     }
     
     int mode = 0;
@@ -186,13 +179,46 @@ public class Life extends PApplet {
         }
         if (keyCode == '3')
         {
-            makeCross();
+            drawCross();
+        }            
+    }
+
+    public void drawCross()
+    {
+        for(int i = 0 ; i < size ; i ++)
+        {
+            setCell(board, size / 2, i, random(255));
+            setCell(board, i, size / 2, random(255));
         }
-            
+    }
+
+    public float averageAround(float[][] board, int row, int col)
+    {
+        float xsum = 0;
+        float ysum = 0;
+        for(int r = row - 1; r <= row + 1 ; r ++)
+        {
+            for(int c = col - 1 ; c <= col + 1 ; c++)
+            {
+                float color = getCell(board, r, c);
+                if (!(r == row && c == col) && color != -1)
+                {
+                    
+                    float angle = map(color , 0, 255, -PI, PI);
+                    xsum += cos(angle);
+                    ysum += sin(angle);
+                }
+            }
+        }
+
+        xsum /= 3.0f;
+        ysum /= 3.0f;
+
+        return map(atan2(ysum, xsum), -PI, PI, 0, 255);
     }
 
     public void setup() {
-        colorMode(RGB);
+        colorMode(HSB);
         randomize();
         
         /*
@@ -203,6 +229,8 @@ public class Life extends PApplet {
         println(countNeighbours(0, 2));
 
         cellSize = width / (size);
+
+        frameRate(20);
         
         //printBoard(board);        
     }
@@ -211,49 +239,54 @@ public class Life extends PApplet {
     {
         for(int row = 0 ; row < size ; row ++)
         {
-            for (int col = 0 ; col < size ; col ++)
+            for(int col = 0 ; col < size ; col ++)
             {
                 int count = countNeighbours(row, col);
-                if (getCell(board, row, col))
+                float c = getCell(board, row, col);
+                if (c >= 0)
                 {
                     if (count == 2 || count == 3)
                     {
-                        next[row][col] = true;
+                        setCell(next, row, col, c);
                     }
                     else
                     {
-                        next[row][col] = false;
+                        setCell(next, row, col, -1);
                     }
                 }
                 else
                 {
                     if (count == 3)
                     {
-                        next[row][col] = true;
+                        setCell(next, row, col, averageAround(board, row, col));
                     }
                     else
                     {
-                        next[row][col] = false;
+                        setCell(next, row, col, -1);
                     }
                 }
             }
         }
-        boolean[][] temp = board;
+
+        
+        // Swap board and next
+        float[][] temp = board;
         board = next;
         next = temp;
     }
 
     public void mouseDragged()
     {
+        // This method gets called automatically when the mouse is dragged across the screen
         int row = (int) map(mouseY, 0, height, 0, size);
         int col = (int) map(mouseX, 0, width, 0, size);
-        setCell(board, row, col, true);
+        setCell(board, row, col, random(255));
     }
 
     public void draw() {
         background(0);
-        drawBoard(board);
-        if (!paused)
+        drawBoard(board);        
+        if (! paused)
         {
             updateBoard();
         }
