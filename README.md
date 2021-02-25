@@ -41,7 +41,15 @@ Resources
 
 # Week 5 - Conway's Game of Life
 
+## Tutorial
+- [Video of the tutorial](https://web.microsoftstream.com/video/7dbf1ef3-3857-4952-b840-f27b3a3187a4)
+- [Life with no colors]
+- [The colorful Game of Life we made in the tutorial]
+
 ## Lab
+
+- [Video of the lab](https://web.microsoftstream.com/video/decb45c9-a4a6-45a9-bb25-0b299c1a3c29)
+
 ### Learning Outcomes
 - Learn how to iterate over a 2D array
 - Explore the magic of cellular automata
