@@ -41,6 +41,9 @@ Resources
 
 # Week 6 - Star Map ArrayList, classes, CSV files
 
+## Lecture
+- [Video of the class](https://web.microsoftstream.com/video/2c196702-f54f-47ad-abf0-be8455d20d02)
+
 # Week 5 - Conway's Game of Life
 
 ## Tutorial
