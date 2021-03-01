@@ -164,7 +164,7 @@ public class Life extends PApplet {
         {
             for (int col = 0 ; col < size ; col ++)
             {
-                setCell(board, row, col, false);
+                setCell(board, row, col, false );
             }
         }
     }
