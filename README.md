@@ -39,6 +39,8 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 6 - Star Map ArrayList, classes, CSV files
+
 # Week 5 - Conway's Game of Life
 
 ## Tutorial
