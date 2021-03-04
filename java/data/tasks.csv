@@ -1,0 +1,10 @@
+Task,Start,End
+Research,1,5
+Design,6,10
+Phase 1,11,13
+Phase 2,12,16
+Phase 3,16,19
+Integration,21,23
+Testing,21,25
+Evaluation,24,28
+Release,28,30
