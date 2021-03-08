@@ -61,6 +61,9 @@ Some audio responsive stuff I have been working on recently:
 
 Try this [lab test from last year](https://github.com/skooter500/OOP-LabTest-2020-Starter). You can use the StarMap example we made in the class on Monday for help.
 
+## Tutorial
+- [Video of the tutorial (Solution to the lab)](https://web.microsoftstream.com/video/d11928a7-1195-4116-9fa0-1f59a7ef9c4e?list=studio)
+
 ## Lecture
 - [Video of the class](https://web.microsoftstream.com/video/2c196702-f54f-47ad-abf0-be8455d20d02)
 
