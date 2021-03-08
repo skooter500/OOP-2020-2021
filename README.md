@@ -41,6 +41,9 @@ Resources
 
 # Week 7 - Audio
 - [Minim library reference](http://code.compartmental.net/minim/)
+- [Video of the class](https://web.microsoftstream.com/video/530ea615-e38c-4c13-819d-d2b39a90519e?list=studio)
+- [lerp](https://processing.org/reference/lerp_.html)
+- [Audio1.java](java/src/ie/tudublin/Audio1.java)
 
 Some audio responsive stuff I have been working on recently:
 
