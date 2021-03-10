@@ -28,9 +28,9 @@ public class Audio1 extends PApplet {
     public void setup() {
         minim = new Minim(this);
         ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
-        //ap = minim.loadFile("heroplanet.mp3", width);
-        ab = ai.mix; // Connect the ab to mic
-        //ab = ap.mix; // Connect the ab to the mp3 file
+        ap = minim.loadFile("heroplanet.mp3", width);
+        //ab = ai.mix; // Connect the buffer to the mic
+        ab = ap.mix; // Connect the buffer to the mp3 file
         colorMode(HSB);
         lerpedBuffer = new float[width];
 
@@ -95,60 +95,18 @@ public class Audio1 extends PApplet {
             }   
             case 1:
             {
-                strokeWeight(2);
-                for (int i = 0; i < ab.size(); i ++)
-                {
-                    float sample = ab.get(i) * halfHeight;
-                    stroke(map(i, 0, ab.size(), 0, 255), 255, 255);
-
-                    lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.02f);
-
-                    sample = lerpedBuffer[i] * width * 6;    
-                    stroke(map(i, 0, ab.size(), 0, 255), 255, 255);
-                    float x = (int) map(i, 0, ab.size(), 0, width);
-                    line(x, height / 2 - sample, x, height/2 + sample); 
-                }
                 break;
             }
             case 2:
             {
-                strokeWeight(2);
-                for (int i = 0; i < ab.size(); i ++)
-                {
-                    float sample = ab.get(i) * halfHeight;
-                    stroke(map(i, 0, ab.size(), 0, 255), 255, 255);
-                    //line(i, halfH + sample, i, halfH - sample); 
-
-                    lerpedBuffer[i] = lerp(lerpedBuffer[i], ab.get(i), 0.01f);
-
-                    sample = lerpedBuffer[i] * width * 6;    
-                    stroke(map(i, 0, ab.size(), 0, 255), 255, 255);
-                    
-                    float x = map(i, 0, ab.size(), 0, width);
-                    float y = map(i, 0, ab.size(), 0, height);
-                        
-                    line(0, y, sample, y); 
-                    line(width, y, width - sample, y); 
-                    line(x, 0, x, sample); 
-                    line(x, height, x, height - sample);
-                }
                 break;
             }
             case 3:
             {
-                noFill();
-                strokeWeight(2);
-                stroke(map(lerpedAverage, 0, 1, 0, 255), 255, 255);
-                ellipse(width / 2, halfHeight, lerpedAverage * width * 2, lerpedAverage * width * 2);
                 break;
             }
             case 4:
             {
-                noFill();
-                strokeWeight(2);
-                stroke(map(lerpedAverage, 0, 1, 0, 255), 255, 255);
-                rectMode(CENTER);
-                rect(width / 2, halfHeight, lerpedAverage * width * 2, lerpedAverage * width * 2);
                 break;
             }
             case 5:
