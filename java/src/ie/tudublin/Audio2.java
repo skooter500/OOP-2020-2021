@@ -114,5 +114,14 @@ public class Audio2 extends PApplet {
 
         calculateFrequencyBands();
 
+        float w = width / (float) bands.length;
+        for(int i = 0 ; i < bands.length ; i ++)
+        {
+            float x = map(i, 0, bands.length, 0, width);
+            float c = map(i, 0, bands.length, 0, 255);
+            noStroke();
+            fill(c, 255, 255);
+            rect(x, height, w, -bands[i] * halfHeight);
+        }
     }
 }
