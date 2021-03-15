@@ -52,7 +52,19 @@ public class Audio2 extends PApplet {
     {
         // Return the element from the spellings array that freq is closest 
         // to in the frequency array
-        return "";
+
+        int closestIndex = 0;
+        float smalestGap = Float.MAX_VALUE;
+        for(int i = 0 ; i < frequencies.length ; i ++)
+        {
+            float gap = abs(freq - frequencies[i]);
+            if (gap < smalestGap)
+            {
+                smalestGap = gap;
+                closestIndex = i;
+            }            
+        }
+        return spellings[closestIndex];
     }
 
     float log2(float f) {
