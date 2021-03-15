@@ -118,7 +118,7 @@ public class Audio1 extends PApplet {
                 noFill();
                 // See the difference lerping makes? It smooths out the jitteryness of average, so the visual looks smoother
                 //ellipse(width / 4, 100, 50 + average * 500, 50 + average * 500);
-                ellipse(width / 2, 100, 50 + (lerpedAverage * 500), 50 + (lerpedAverage * 500));                
+                ellipse(width / 2, height / 2, 50 + (lerpedAverage * 500), 50 + (lerpedAverage * 500));                
                 break;
             }
             case 4:
