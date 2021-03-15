@@ -27,10 +27,11 @@ public class Audio1 extends PApplet {
 
     public void setup() {
         minim = new Minim(this);
-        ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
-        //ap = minim.loadFile("heroplanet.wav", width);
-        //ab = ap.mix; // Connect the buffer to the mp3 file
-        ab = ai.mix; 
+        //ai = minim.getLineIn(Minim.MONO, width, 44100, 16);
+        ap = minim.loadFile("heroplanet.mp3", width);
+        ap.play();
+        ab = ap.mix; // Connect the buffer to the mp3 file
+        //ab = ai.mix; 
         colorMode(HSB);
         lerpedBuffer = new float[width];
 

@@ -41,6 +41,9 @@ Resources
 
 # Week 7 - Audio
 
+## Tutorial
+- [Video of the Tutorial](https://web.microsoftstream.com/video/9dcc9000-39e8-4fce-a0e6-a9f75084f6f9?list=studio)
+
 ## Lab 
 ### Learning Outcomes
 - Practice for loops
