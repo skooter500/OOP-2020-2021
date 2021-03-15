@@ -28,7 +28,7 @@ public class Audio2 extends PApplet {
             average += fft.getBand(j) * (j + 1);
           }
           average /= (float) w;
-          bands[i] = average * 5.0f;
+          bands[i] = average * 5;
           smoothedBands[i] = lerp(smoothedBands[i], bands[i], 0.05f);
         }
       }
@@ -51,9 +51,9 @@ public class Audio2 extends PApplet {
         colorMode(HSB);
 
         minim = new Minim(this);
-        ap = minim.loadFile("scale.wav", width);
+        ap = minim.loadFile("heroplanet.mp3", width);
         ai = minim.getLineIn(Minim.MONO, width, 44100, 16); 
-        ab = ai.mix;
+        ab = ap.mix;
 
         fft = new FFT(width, 44100);
 
@@ -100,7 +100,7 @@ public class Audio2 extends PApplet {
         for(int i = 0 ; i < fft.specSize() ; i ++)
         {
             stroke(map(i, 0, fft.specSize(), 0, 255), 255, 255);
-            line(i, height, i, height - (fft.getBand(i) * halfHeight));
+            //line(i, height, i, height - (fft.getBand(i) * halfHeight));
             if (fft.getBand(i) > fft.getBand(highestBand))
             {
                 highestBand = i;
@@ -121,7 +121,7 @@ public class Audio2 extends PApplet {
             float c = map(i, 0, bands.length, 0, 255);
             noStroke();
             fill(c, 255, 255);
-            rect(x, height, w, -bands[i] * halfHeight);
+            rect(x, height, w, -smoothedBands[i]);
         }
     }
 }
