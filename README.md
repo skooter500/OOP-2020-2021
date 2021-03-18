@@ -39,6 +39,12 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 8 - Frequency Domain Analysis, transcription, frequency bands
+- [Video of the class](https://web.microsoftstream.com/video/e9483fdd-c3d6-4b48-a88b-8adbf7752175)
+	- FFT visualisation, transcription, audio bands
+- [Video of the tutorial](https://web.microsoftstream.com/video/c3027ca1-ed72-432d-be2c-c09bb9683fc8)
+	- We did some coding bat exercises and also made a 3D cube that responded to sound
+
 # Week 7 - Audio
 
 ## Tutorial
