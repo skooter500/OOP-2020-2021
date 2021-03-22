@@ -22,10 +22,10 @@ public class Player {
     {
         yasc.rotate(rotation);
         // Write this!!
-        yasc.line(x - halfW, y + halfW, x, y - halfW);
-        yasc.line(x, y - halfW, x + halfW, y + halfW);
-        yasc.line(x + halfW, y + halfW, x, y);
-        yasc.line(x, y, x - halfW, y + halfW);
+        yasc.line(- halfW, halfW, 0, - halfW);
+        yasc.line(0, - halfW, halfW, halfW);
+        yasc.line(halfW, halfW, 0, 0);
+        yasc.line(0, 0, - halfW, halfW);
     }
 
     void update()
