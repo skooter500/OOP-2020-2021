@@ -98,9 +98,15 @@ public class Main
         processing.core.PApplet.runSketch( a, new Audio2());
     }
 
+    public void yasc()
+    {
+        String[] a = {"MAIN"};
+        processing.core.PApplet.runSketch( a, new YASC());
+    }
+
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.audio1();
+        main.yasc();
     }
 } 
