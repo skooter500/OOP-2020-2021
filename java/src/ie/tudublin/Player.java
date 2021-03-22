@@ -8,16 +8,19 @@ public class Player {
     float w = 50;
     float halfW = w / 2;
     YASC yasc;
+    float rotation;
 
     public Player(YASC yasc, float x, float y)
     {
         this.yasc = yasc;
         this.x = x;
         this.y = y;
+        rotation = 0;
     }
 
     void render()
     {
+        yasc.rotate(rotation);
         // Write this!!
         yasc.line(x - halfW, y + halfW, x, y - halfW);
         yasc.line(x, y - halfW, x + halfW, y + halfW);
@@ -37,11 +40,11 @@ public class Player {
         }
         if (yasc.checkKey(PApplet.LEFT))
         {
-            x -= 1;
+            rotation -= 0.1f;
         }
         if (yasc.checkKey(PApplet.RIGHT))
         {
-            x += 1;
+            rotation += 0.1f;
         }        
     }
 
