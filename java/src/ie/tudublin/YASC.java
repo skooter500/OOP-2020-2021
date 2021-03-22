@@ -9,9 +9,18 @@ public class YASC extends PApplet {
     float w = 50;
     float halfW = w / 2;
 
+    // Update your forks!
+    // Create a branch for today monday9
+    // Write drawPlayer
+    // Write movePlayer
+
     void drawPlayer(float x, float y)
     {
-
+        // Write this!!
+        line(x - halfW, y + halfW, x, y - halfW);
+        line(x, y - halfW, x + halfW, y + halfW);
+        line(x + halfW, y + halfW, x, y);
+        line(x, y, x - halfW, y + halfW);
     }
 
     void movePlayer()
@@ -20,6 +29,19 @@ public class YASC extends PApplet {
         {
             y -= 1;
         }
+        if (checkKey(DOWN))
+        {
+            y += 1;
+        }
+        if (checkKey(LEFT))
+        {
+            x -= 1;
+        }
+        if (checkKey(RIGHT))
+        {
+            x += 1;
+        }
+        
     }
 
     public void settings() {
