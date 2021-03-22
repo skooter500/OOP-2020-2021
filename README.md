@@ -39,9 +39,82 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 8 - Frequency Domain Analysis, transcription, frequency bands
+- [Video of the class](https://web.microsoftstream.com/video/e9483fdd-c3d6-4b48-a88b-8adbf7752175)
+	- FFT visualisation, transcription, audio bands
+- [Video of the tutorial](https://web.microsoftstream.com/video/c3027ca1-ed72-432d-be2c-c09bb9683fc8)
+	- We did some coding bat exercises and also made a 3D cube that responds to sound:
+
+![Image](images/p40.png)
+
+# Week 7 - Audio
+
+## Tutorial
+- [Video of the Tutorial](https://web.microsoftstream.com/video/9dcc9000-39e8-4fce-a0e6-a9f75084f6f9?list=studio)
+
+## Lab 
+### Learning Outcomes
+- Practice for loops
+- Demonstrate an understanding of how digital audio works
+- Practice computational thinking and problem solving
+- Have fun making beautiful things 
+
+Update your forks and have a look at Audio1.java this is the code we wrote on Monday with some modifications. Checkout the ```keyPressed``` function. This starts and restarts the audio file when you press space. Also it sets the value of the ```which``` variable to be the numbers 0-5 when you press the appropriate key on the keyboard. If your computer wont play the audio file for some reason,you can uncomment the code to read audio from the microphone instead or use a .wav file instead.
+
+Ok now check out this video of 5 visuals you can make today. Pressing the keys 0-4 on the keyboard should change the visual in your sketch.
+
+[![YouTube](http://img.youtube.com/vi/xF7VrXZqLko/0.jpg)](https://www.youtube.com/watch?v=xF7VrXZqLko)
+
+- 0 - The wavy lines visual
+- 1 - The waveform
+- 2 - The waveform drawn down the 4 sides of the screen
+- 3 - The circle - Use the lerped amplitude to control the size of the circle
+- 4 - The square - Again use the lerped amplitude to control the size of the square. You can also use rectMode(CENTER) to make the x and y parameters of the rect function determine the center of the rect rather than the coordinates of the top left corner
+- 5 - There is no visual associated with 5 in the video, so come up with your own!
+
+## Lecture
+
+- [Minim library reference](http://code.compartmental.net/minim/)
+- [Video of the class](https://web.microsoftstream.com/video/530ea615-e38c-4c13-819d-d2b39a90519e?list=studio)
+- [lerp](https://processing.org/reference/lerp_.html)
+- [Audio1.java](java/src/ie/tudublin/Audio1.java)
+
+Some audio responsive stuff I have been working on recently:
+
+[![YouTube](http://img.youtube.com/vi/4Fc_OW4M5AU/0.jpg)](https://www.youtube.com/watch?v=4Fc_OW4M5AU)
+
+[![YouTube](http://img.youtube.com/vi/xF7VrXZqLko/0.jpg)](https://www.youtube.com/watch?v=xF7VrXZqLko)
+
+[![YouTube](http://img.youtube.com/vi/KNymjRyr27A/0.jpg)](https://www.youtube.com/watch?v=KNymjRyr27A)
+
+# Week 6 - Star Map ArrayList, classes, CSV files
+
+##  Lab
+### Learning Outcomes
+- Make a class
+- Make constructors & accessor methods
+- Use an ArrayList
+- Develop problem solving & algorithm design skills
+
+Try this [lab test from last year](https://github.com/skooter500/OOP-LabTest-2020-Starter). You can use the StarMap example we made in the class on Monday for help.
+
+## Tutorial
+- [Video of the tutorial (Solution to the lab)](https://web.microsoftstream.com/video/d11928a7-1195-4116-9fa0-1f59a7ef9c4e?list=studio)
+
+## Lecture
+- [Video of the class](https://web.microsoftstream.com/video/2c196702-f54f-47ad-abf0-be8455d20d02)
+
 # Week 5 - Conway's Game of Life
 
+## Tutorial
+- [Video of the tutorial](https://web.microsoftstream.com/video/7dbf1ef3-3857-4952-b840-f27b3a3187a4)
+- [Life with no colors](java/src/ie/tudublin/Life.java)
+- [The colorful Game of Life we made in the tutorial](java/src/ie/tudublin/ColorfulLife.java)
+
 ## Lab
+
+- [Video of the lab](https://web.microsoftstream.com/video/decb45c9-a4a6-45a9-bb25-0b299c1a3c29)
+
 ### Learning Outcomes
 - Learn how to iterate over a 2D array
 - Explore the magic of cellular automata
