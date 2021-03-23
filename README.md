@@ -39,13 +39,35 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 9 - YASC
+## Lecture
+- [Download YASC](https://skooter500.itch.io/)
+- [YASC code](http://github.com/skooter500/YASC)
+- [Video of the class](https://web.microsoftstream.com/video/a5104e6c-40a7-4ff7-b131-cffed3913220?list=studio)
+
+## Lab
+
+### Part 1
+
+Fork [this repo](https://github.com/skooter500/MusicVisuals) which has the starter code and examples for your assignment. Clone your fork and make sure it compiles and runs ok. 
+
+### Part 2
+
+Update your forks of the master branch to get the code for the moveable Player we made in Monday's class. Create a branch for your work today.
+
+
 # Week 8 - Frequency Domain Analysis, transcription, frequency bands
+## Lecture
 - [Video of the class](https://web.microsoftstream.com/video/e9483fdd-c3d6-4b48-a88b-8adbf7752175)
 	- FFT visualisation, transcription, audio bands
+
+## Tutorial
 - [Video of the tutorial](https://web.microsoftstream.com/video/c3027ca1-ed72-432d-be2c-c09bb9683fc8)
 	- We did some coding bat exercises and also made a 3D cube that responds to sound:
 
 ![Image](images/p40.png)
+
+No lab due to the bank holiday
 
 # Week 7 - Audio
 
