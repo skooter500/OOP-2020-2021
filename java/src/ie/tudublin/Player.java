@@ -12,6 +12,7 @@ public class Player {
     float rotation;
 
     int health = 10;
+    int ammo = 10;
 
     public Player(YASC yasc, float x, float y)
     {
@@ -33,7 +34,8 @@ public class Player {
         yasc.line(0, 0, - halfW, halfW);
         yasc.popMatrix();
         yasc.textSize(14);
-        yasc.text("Health: " + health, x + 50, y);
+        yasc.text("Health: " + health, x + 50, y - 10);
+        yasc.text("Ammo: " + ammo, x + 50, y + 10);
     }
 
     void update()

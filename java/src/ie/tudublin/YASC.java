@@ -13,6 +13,7 @@ public class YASC extends PApplet {
 
     Player p;
     Health h;
+    Ammo a;
 
     public void settings() {
         size(500, 500);
@@ -21,6 +22,7 @@ public class YASC extends PApplet {
     public void setup() {
         p = new Player(this, width / 2, height / 2);
         h = new Health(this);
+        a = new Ammo(this);
     }
 
     public void draw() {
@@ -30,6 +32,9 @@ public class YASC extends PApplet {
         p.render();
         h.update();
         h.render();
+
+        a.update();
+        a.render();
         
         // Check collisions        
         checkCollisions();
@@ -41,6 +46,12 @@ public class YASC extends PApplet {
         {
             p.health += 10;
             h.respawn();    
+        }
+
+        if (dist(p.x, p.y, a.x, a.y) < p.halfW + a.halfW)
+        {
+            p.ammo += 10;
+            a.respawn();    
         }
     }
 

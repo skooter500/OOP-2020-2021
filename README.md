@@ -53,11 +53,18 @@ Fork [this repo](https://github.com/skooter500/MusicVisuals) which has the start
 
 ### Part 2
 
-Update your forks of the master branch to get the code for the moveable Player we made in Monday's class. Create a branch for your work today! Today you can make two more classes to encapsulate the behaviour of health and ammo powerups as per this video:
+Today you can make two more classes to encapsulate the behaviour of health and ammo powerups as per this video:
+
+[![YouTube](http://img.youtube.com/vi/Bfr0S6oTBsc/0.jpg)](https://www.youtube.com/watch?v=Bfr0S6oTBsc)
 
 
+To complete this lab!
 
-
+- Update your forks of the master branch to get the code for the moveable Player we made in Monday's class. Create a branch for your work today.
+- Make a class called Health. Initially it should spawn off screen and move in a random direction onscreen. It could spawn from the top, bottom, left or right side of the screen. You can use yasc.random to generate random numbers. I wrote a respawn method on the class and call it from the constructor to set the initial x, y, dx and dy values. Notice how the health is drawn and notice in the video that the health is rotating as well as moving. If the health goes off the side of the screen it should respawn. Don't forget to create an instance of the Health in YASC.java and call update and render.
+- Do the same for Ammo
+- Add health and ammo fields to the Player class and print the health and ammo beside the player
+- Add code in YASC.java to check collisions between the player and either of the powerups and add to the player's health and ammo stats. To check collisions, you can check id the distance between the player and the powerup < the sum of the two radii. You can use the ```dist``` function to calculate the distance. 
 
 # Week 8 - Frequency Domain Analysis, transcription, frequency bands
 ## Lecture
