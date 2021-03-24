@@ -53,7 +53,10 @@ Fork [this repo](https://github.com/skooter500/MusicVisuals) which has the start
 
 ### Part 2
 
-Update your forks of the master branch to get the code for the moveable Player we made in Monday's class. Create a branch for your work today.
+Update your forks of the master branch to get the code for the moveable Player we made in Monday's class. Create a branch for your work today! Today you can make two more classes to encapsulate the behaviour of health and ammo powerups as per this video:
+
+
+
 
 
 # Week 8 - Frequency Domain Analysis, transcription, frequency bands
