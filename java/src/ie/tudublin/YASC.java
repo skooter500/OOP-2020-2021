@@ -21,7 +21,7 @@ public class YASC extends PApplet {
 
     public void setup() {
         p = new Player(this, width / 2, height / 2);
-        h = new Health(this);
+        h = new Health(this, 200, 200);
         a = new Ammo(this);
     }
 
@@ -45,7 +45,7 @@ public class YASC extends PApplet {
         if (dist(p.x, p.y, h.x, h.y) < p.halfW + h.halfW)
         {
             p.health += 10;
-            h.respawn();    
+            //h.respawn();    
         }
 
         if (dist(p.x, p.y, a.x, a.y) < p.halfW + a.halfW)

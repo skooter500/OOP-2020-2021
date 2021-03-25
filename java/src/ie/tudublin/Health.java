@@ -11,114 +11,61 @@ public class Health {
     YASC yasc;
     float rotation;
 
-    public Health(YASC yasc)
-    {
+    float speedx, speedy;
+
+    public Health(YASC yasc, float x, float y) {
         this.yasc = yasc;
+        this.x = x;
+        this.y = y;
         rotation = 0;
-        respawn();            
+        speedx = yasc.random(2, 8);
+        speedy = yasc.random(2, 8);
     }
-
-    void respawn()
-    {
-        // Roll a dice
-        int dice = (int) yasc.random(5);
-        switch (dice)
-        {
-            case 0:
-                // left
-                x = -w;
-                y = yasc.random(0, yasc.height);
-                dx = yasc.random(1, 4);
-                dy = yasc.random(-1, 1);
-                break;
-            case 1:
-                // top 
-                x = yasc.random(0, yasc.width);
-                y = -w;
-                dx = yasc.random(-1, 1);
-                dy = yasc.random(1, 4);
-                break;
-            case 2:
-                // right
-                x = yasc.width + w;
-                y = yasc.random(0, yasc.height);
-                dx = yasc.random(-1, -4);
-                dy = yasc.random(-1, 1);
-                break;
-            case 3:
-                // bottom
-                x = yasc.random(0, yasc.width);
-                y = yasc.height + w;
-                dx = yasc.random(-1, 1);
-                dy = yasc.random(-1, -4);
-                break;
-        }
-    }
-
     void render()
     {
         yasc.pushMatrix();
-        yasc.translate(x, y);
+        //yasc.translate(x, y);
         yasc.rotate(rotation);
-        // Write this!!
-        yasc.stroke(255);
-        yasc.line(-halfW, halfW, -halfW, -halfW);
-        yasc.line(-halfW, -halfW, halfW, -halfW);
-        yasc.line(halfW, -halfW, halfW, halfW);        
-        yasc.line(halfW, halfW, -halfW, halfW);
-
-        yasc.line(0, -halfW, 0, halfW);
-        yasc.line(-halfW, 0, halfW, 0);
-
+        yasc.rectMode(PApplet.CENTER);
+        yasc.rect(x, y, 50, 50);
         yasc.popMatrix();
     }
 
     void update()
-    {        
-        x += dx;
-        y += dy;
-        rotation += 0.01f;
+    {
+        //dx = PApplet.sin(rotation);
+        //dy =  - PApplet.cos(rotation);
+        
+        x = x + speedx;
+        y = y + speedy;
 
-        if (x < - w)
+        if (x > yasc.width)
         {
-            respawn();
+            x = yasc.width;
+            speedx *= -1;
+            //rotation += 0.1f;
+            //respawn();
         }
-        if (x > yasc.width + w)
+        if (x < 0)
         {
-            respawn();
+            x = 0;
+            speedx *= -1;
+            //rotation -= 0.1f;
+            //respawn();
         }
-
-        if (y < - w)
+        if (y < 0)
         {
-            respawn();
+            y = 0;
+            speedy *= -1;
+            //rotation -= 0.1f;
+            //respawn();
         }
-        if (y > yasc.height + w)
+        if (y > yasc.height)
         {
-            respawn();
+            y = yasc.height;
+            speedy *= -1;
+           // rotation += 0.1f;
+            //respawn();
         }
-    }
-
-    public float getX() {
-        return x;
-    }
-
-    public void setX(float x) {
-        this.x = x;
-    }
-
-    public float getY() {
-        return y;
-    }
-
-    public void setY(float y) {
-        this.y = y;
-    }
-
-    public float getW() {
-        return w;
-    }
-
-    public void setW(float w) {
-        this.w = w;
     }
 }
