@@ -22,7 +22,7 @@ public class Life extends PApplet {
     public int countNeighbours(int row, int col)
     {
         int count = 0;
-        
+        /*
         for(int r = row -1 ; r <= row + 1; r ++)
         {
             for(int c = col -1 ; c <= col + 1; c ++)
@@ -32,13 +32,14 @@ public class Life extends PApplet {
                     if (getCell(board, r, c))
                     {
                         count ++;
+
                     }
                 }
             }
-        }
+        }*/
 
         // OR Use 8 if statements
-        /*
+        
         if (getCell(board, row-1, col-1))
         {
             count ++;
@@ -71,7 +72,7 @@ public class Life extends PApplet {
         {
             count ++;
         }
-        */
+        
         
         return count;
     }
@@ -137,7 +138,7 @@ public class Life extends PApplet {
             for (int col = 0 ; col < size ; col ++)
             {
                 float dice = random(0.0f, 1.0f);
-                /*
+                /*a
                 if (dice < 0.5)
                 {
                     board[row][col] = true;
@@ -163,7 +164,7 @@ public class Life extends PApplet {
         {
             for (int col = 0 ; col < size ; col ++)
             {
-                setCell(board, row, col, false);
+                setCell(board, row, col, false );
             }
         }
     }
