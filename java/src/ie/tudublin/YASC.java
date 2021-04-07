@@ -12,6 +12,8 @@ public class YASC extends PApplet {
     // Write movePlayer
 
     Player p;
+    Health h;
+    Ammo a;
 
     public void settings() {
         size(500, 500);
@@ -19,6 +21,8 @@ public class YASC extends PApplet {
 
     public void setup() {
         p = new Player(this, width / 2, height / 2);
+        h = new Health(this);
+        a = new Ammo(this);
     }
 
     public void draw() {
@@ -26,6 +30,11 @@ public class YASC extends PApplet {
         stroke(255);
         p.update();
         p.render();
+        h.update();
+        h.render();
+
+        a.update();
+        a.render();
         
         // Check collisions        
         checkCollisions();
@@ -33,6 +42,17 @@ public class YASC extends PApplet {
 
     void checkCollisions() 
     {
+        if (dist(p.x, p.y, h.x, h.y) < p.halfW + h.halfW)
+        {
+            p.health += 10;
+            h.respawn();    
+        }
+
+        if (dist(p.x, p.y, a.x, a.y) < p.halfW + a.halfW)
+        {
+            p.ammo += 10;
+            a.respawn();    
+        }
     }
 
     boolean checkKey(int k) {
