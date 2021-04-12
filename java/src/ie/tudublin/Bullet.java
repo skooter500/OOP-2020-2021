@@ -13,10 +13,7 @@ public class Bullet extends GameObject{
 
     public Bullet(YASC yasc, float x, float y, float rotation)
     {
-        this.x = x;
-        this.y = y;
-        this.rotation = rotation;
-        this.yasc = yasc;
+        super(yasc, x, y, rotation);
         lifetime = 5;
         timeAlive = 0;
     }
