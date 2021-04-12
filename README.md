@@ -2,9 +2,9 @@
 
 # Teams Links for online classes:
 
-- [Monday Class](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjUzNjZlMDMtOTNhZi00MDYyLThkODgtNzQxYjBjZDY3YTg0%40thread.v2/0?context=%7b%22Tid%22%3a%22766317cb-e948-4e5f-8cec-dabc8e2fd5da%22%2c%22Oid%22%3a%2261aab78b-a857-4647-9668-83d4cca5de03%22%7d)
-- [Wednesday Labs](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWVjNDM4NTAtOGJhOC00MjEyLTkzMTMtNzA3OTgwOGNhZTYw%40thread.v2/0?context=%7b%22Tid%22%3a%22766317cb-e948-4e5f-8cec-dabc8e2fd5da%22%2c%22Oid%22%3a%2261aab78b-a857-4647-9668-83d4cca5de03%22%7d)
-- [Thursday Tutorial](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGU3Mzg3N2YtMzkxZC00OThjLWFmNjItYzVlNDZhNWY5OWY2%40thread.v2/0?context=%7b%22Tid%22%3a%22766317cb-e948-4e5f-8cec-dabc8e2fd5da%22%2c%22Oid%22%3a%2261aab78b-a857-4647-9668-83d4cca5de03%22%7d)
+- [Monday 12:00-14:00 Class](https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjUzNjZlMDMtOTNhZi00MDYyLThkODgtNzQxYjBjZDY3YTg0%40thread.v2/0?context=%7b%22Tid%22%3a%22766317cb-e948-4e5f-8cec-dabc8e2fd5da%22%2c%22Oid%22%3a%2261aab78b-a857-4647-9668-83d4cca5de03%22%7d)
+- [Wednesday 16:00-18:00 Labs](https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWVjNDM4NTAtOGJhOC00MjEyLTkzMTMtNzA3OTgwOGNhZTYw%40thread.v2/0?context=%7b%22Tid%22%3a%22766317cb-e948-4e5f-8cec-dabc8e2fd5da%22%2c%22Oid%22%3a%2261aab78b-a857-4647-9668-83d4cca5de03%22%7d)
+- [Thursday 09:00 Tutorial](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGU3Mzg3N2YtMzkxZC00OThjLWFmNjItYzVlNDZhNWY5OWY2%40thread.v2/0?context=%7b%22Tid%22%3a%22766317cb-e948-4e5f-8cec-dabc8e2fd5da%22%2c%22Oid%22%3a%2261aab78b-a857-4647-9668-83d4cca5de03%22%7d)
 - [Sign in Sheet for labs](https://docs.google.com/spreadsheets/d/1dpzq-iS3DPHBin2oT_txSlmsIEVo_zs524FemMm-2vI/edit?usp=sharing)
 
 Resources
@@ -39,13 +39,45 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 9 - YASC
+## Lecture
+- [Download YASC](https://skooter500.itch.io/)
+- [YASC code](http://github.com/skooter500/YASC)
+- [Video of the class](https://web.microsoftstream.com/video/a5104e6c-40a7-4ff7-b131-cffed3913220?list=studio)
+
+## Lab
+
+### Part 1
+
+Fork [this repo](https://github.com/skooter500/MusicVisuals) which has the starter code and examples for your assignment. Clone your fork and make sure it compiles and runs ok. 
+
+### Part 2
+
+Today you can make two more classes to encapsulate the behaviour of health and ammo powerups as per this video:
+
+[![YouTube](http://img.youtube.com/vi/Bfr0S6oTBsc/0.jpg)](https://www.youtube.com/watch?v=Bfr0S6oTBsc)
+
+
+To complete this lab!
+
+- Update your forks of the master branch to get the code for the moveable Player we made in Monday's class. Create a branch for your work today.
+- Make a class called Health. Initially it should spawn off screen and move in a random direction onscreen. It could spawn from the top, bottom, left or right side of the screen. You can use yasc.random to generate random numbers. I wrote a respawn method on the class and call it from the constructor to set the initial x, y, dx and dy values. Notice how the health is drawn and notice in the video that the health is rotating as well as moving. If the health goes off the side of the screen it should respawn. Don't forget to create an instance of the Health in YASC.java and call update and render.
+- Do the same for Ammo
+- Add health and ammo fields to the Player class and print the health and ammo beside the player
+- Add code in YASC.java to check collisions between the player and either of the powerups and add to the player's health and ammo stats. To check collisions, you can check id the distance between the player and the powerup < the sum of the two radii. You can use the ```dist``` function to calculate the distance. 
+
 # Week 8 - Frequency Domain Analysis, transcription, frequency bands
+## Lecture
 - [Video of the class](https://web.microsoftstream.com/video/e9483fdd-c3d6-4b48-a88b-8adbf7752175)
 	- FFT visualisation, transcription, audio bands
+
+## Tutorial
 - [Video of the tutorial](https://web.microsoftstream.com/video/c3027ca1-ed72-432d-be2c-c09bb9683fc8)
 	- We did some coding bat exercises and also made a 3D cube that responds to sound:
 
 ![Image](images/p40.png)
+
+No lab due to the bank holiday
 
 # Week 7 - Audio
 
