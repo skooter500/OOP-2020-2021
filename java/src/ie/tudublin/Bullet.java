@@ -19,6 +19,7 @@ public class Bullet {
 
     public void render()
     {
+        yasc.stroke(255);
         yasc.pushMatrix();
         yasc.translate(x, y);
         yasc.rotate(rotation);

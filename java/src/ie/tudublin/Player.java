@@ -42,7 +42,10 @@ public class Player {
     {
         if (yasc.checkKey(' '))
         {
-            Bullet b = new Bullet(yasc, x, y, rotation);
+            float dist = 30;
+            
+            Bullet b = new Bullet(yasc, x + (dx * dist), y + (dy * dist), rotation);
+            
             yasc.bullets.add(b);
         }
     }
