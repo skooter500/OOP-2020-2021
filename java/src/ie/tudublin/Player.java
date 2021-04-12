@@ -26,6 +26,8 @@ public class Player {
     {
         yasc.pushMatrix();
         yasc.translate(x, y);
+        yasc.text("Health: " + health, 50,  - 10);
+        yasc.text("Ammo: " + ammo, 50, 10);
         yasc.rotate(rotation);
         // Write this!!
         yasc.line(- halfW, halfW, 0, - halfW);
@@ -33,9 +35,16 @@ public class Player {
         yasc.line(halfW, halfW, 0, 0);
         yasc.line(0, 0, - halfW, halfW);
         yasc.popMatrix();
-        yasc.textSize(14);
-        yasc.text("Health: " + health, x + 50, y - 10);
-        yasc.text("Ammo: " + ammo, x + 50, y + 10);
+        yasc.textSize(14);        
+    }
+
+    void shoot()
+    {
+        if (yasc.checkKey(' '))
+        {
+            Bullet b = new Bullet(yasc, x, y, rotation);
+            yasc.bullets.add(b);
+        }
     }
 
     void update()
@@ -60,7 +69,9 @@ public class Player {
         if (yasc.checkKey(PApplet.RIGHT))
         {
             rotation += 0.1f;
-        }        
+        }  
+        
+        shoot();
     }
 
     public float getX() {

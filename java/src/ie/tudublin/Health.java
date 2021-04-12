@@ -4,7 +4,7 @@ import processing.core.PApplet;
 
 public class Health {
 
-    float x, y;
+    private float x, y;
     float dx, dy;
     float w = 50;
     float halfW = w / 2;
