@@ -46,6 +46,10 @@ Resources
 - [Abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
 
 # Week 9 - YASC
+
+## Tutorial
+- [Video of the tutorial](https://web.microsoftstream.com/video/d6815f87-624b-43a6-8331-7c7b912a10d4?list=studio)
+
 ## Lecture
 - [Download YASC](https://skooter500.itch.io/)
 - [YASC code](http://github.com/skooter500/YASC)
