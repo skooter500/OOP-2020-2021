@@ -104,9 +104,49 @@ public class Main
         processing.core.PApplet.runSketch( a, new YASC());
     }
 
+    public void strings()
+    {
+        String s = "I may be hungry, but I sure ain't weird.";
+
+        String a = s.substring(0, 5);
+        String b = s.substring(9, 15);
+        String c = s.substring(34);
+        System.out.println(a);
+        System.out.println(b);
+
+        if (s.startsWith("I may"))
+        {
+            System.out.println("Starts with I may");
+        }
+        if (s.endsWith("weird"))
+        {
+            System.out.println("Ends with weird");
+        }
+        System.out.println(s.toUpperCase());
+
+        int hungryIndex = s.indexOf("hungry");
+        System.out.println(hungryIndex);
+
+        int weirdIndex = s.lastIndexOf("e");
+        System.out.println(weirdIndex);
+
+        String[] words = s.split(" ");
+
+        for(String ss: words)
+        {
+            System.out.println(ss);
+        }
+
+        for(int i = s.length() - 1; i >= 0; i--)
+        {
+            System.out.println(s.substring(i, i + 1));
+        }
+
+    }
+
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.yasc();
+        main.strings();
     }
 } 
