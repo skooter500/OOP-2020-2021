@@ -2,8 +2,12 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
-public class Health extends GameObject {
+public class Health extends GameObject implements PowerUp{
 
+    @Override
+    public void applyTo(Player p) {
+        p.health += 10;        
+    }
 
     public Health(YASC yasc)
     {

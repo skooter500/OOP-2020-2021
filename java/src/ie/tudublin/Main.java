@@ -108,45 +108,30 @@ public class Main
     {
         String s = "I may be hungry, but I sure ain't weird.";
 
-        String a = s.substring(0, 5); // Retrieve a substring starting at 0 and finishing at character 5 - 1 (4)
-        String b = s.substring(9, 15);
-        String c = s.substring(34);
-        System.out.println(a);
-        System.out.println(b);
+        String ss = s.substring(9, 15);
+        System.out.println(ss);
 
-        if (s.startsWith("I may")) // Returns true if s starts with "I may"
+        System.out.println(s.charAt(0));
+        System.out.println(s.toLowerCase());
+
+        System.out.println(s.indexOf("hungry"));
+        System.out.println(s.lastIndexOf("e"));
+
+        for(int i = s.length() - 1; i >= 0; i--)
         {
-            System.out.println("Starts with I may");
-        }
-        if (s.endsWith("weird"))
-        {
-            System.out.println("Ends with weird");
-        }
-        System.out.println(s.toUpperCase());
-
-        int hungryIndex = s.indexOf("hungry");
-        System.out.println(hungryIndex);
-
-        int weirdIndex = s.lastIndexOf("e");
-        System.out.println(weirdIndex);
-
-        String[] words = s.split(" "); // Splits the string into multiple strings based on a delimiter
-
-        for(String ss: words)
-        {
-            System.out.println(ss);
+            System.out.println(s.charAt(i));
+            System.out.println(s.substring(i, i+1));
         }
 
-        for(int i = s.length() - 1; i >= 0; i--) // Print the string backwards
+        for(String sss:s.split(" "))
         {
-            System.out.println(s.substring(i, i + 1));
+            System.out.println(sss);
         }
-
     }
 
     public static void main(String[] args)
     {
         Main main = new Main();
-        main.yasc();
+        main.strings();
     }
 } 
