@@ -2,19 +2,11 @@ package ie.tudublin;
 
 import processing.core.PApplet;
 
-public class Ammo {
-
-    float x, y;
-    float dx, dy;
-    float w = 50;
-    float halfW = w / 2;
-    YASC yasc;
-    float rotation;
+public class Ammo extends GameObject{
 
     public Ammo(YASC yasc)
     {
-        this.yasc = yasc;
-        rotation = 0;
+        super(yasc, 0, 0, 0);
         respawn();            
     }
 
@@ -55,7 +47,7 @@ public class Ammo {
         }
     }
 
-    void render()
+    public void render()
     {
         yasc.pushMatrix();
         yasc.translate(x, y);
@@ -67,7 +59,7 @@ public class Ammo {
         yasc.popMatrix();
     }
 
-    void update()
+    public void update()
     {        
         x += dx;
         y += dy;

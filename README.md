@@ -39,7 +39,17 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 10 - Inheritance & Abstract Classes, Bullets in the YASC game
+## Lecture
+- [Video of the class](https://web.microsoftstream.com/video/07c190ba-948c-48ea-be72-552ef0a99526)
+- [Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
+- [Abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+
 # Week 9 - YASC
+
+## Tutorial
+- [Video of the tutorial](https://web.microsoftstream.com/video/d6815f87-624b-43a6-8331-7c7b912a10d4?list=studio)
+
 ## Lecture
 - [Download YASC](https://skooter500.itch.io/)
 - [YASC code](http://github.com/skooter500/YASC)
