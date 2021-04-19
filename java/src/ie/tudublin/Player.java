@@ -36,7 +36,7 @@ public class Player extends GameObject {
             
             Bullet b = new Bullet(yasc, x + (dx * dist), y + (dy * dist), rotation);
             
-            yasc.bullets.add(b);
+            yasc.gameObjects.add(b);
         }
     }
 

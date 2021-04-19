@@ -42,7 +42,7 @@ public class Bullet extends GameObject{
         timeAlive += (1 / 60.0f);
         if (timeAlive > lifetime)
         {
-            yasc.bullets.remove(this);
+            yasc.gameObjects.remove(this);
         }
 
         if (x < 0)
