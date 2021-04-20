@@ -42,6 +42,8 @@ Resources
 # Week 11 - Polymorphism, interfaces & strings
 - [Video of the class](https://youtu.be/QVWeU7rFlo4)
 
+Solution to [this coding bat problem](https://codingbat.com/prob/p123614):
+
 ```Java
 public int countCode(String str) {
   int loc = str.indexOf("co");
@@ -63,8 +65,6 @@ public int countCode(String str) {
 - [Video of the class](https://web.microsoftstream.com/video/07c190ba-948c-48ea-be72-552ef0a99526)
 - [Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
 - [Abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
-
-Solution to [this coding bat problem](https://codingbat.com/prob/p123614):
 
 ## Tutorial
 - [Video of the tutorial](https://web.microsoftstream.com/video/29f434db-4070-4871-a478-89ace8df2768?list=studio)
