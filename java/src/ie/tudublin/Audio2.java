@@ -34,7 +34,7 @@ public class Audio2 extends PApplet {
       }
 
     public void settings() {
-        size(1024, 1024);
+        size(1024, 720);
         //fullScreen(P3D, SPAN); // Try this for full screen multiple monitor support :-) Be careful of exceptions!
     }
 
@@ -75,7 +75,7 @@ public class Audio2 extends PApplet {
         colorMode(HSB);
 
         minim = new Minim(this);
-        ap = minim.loadFile("heroplanet.mp3", width);
+        ap = minim.loadFile("A.M.P - Haunted.mp3", width);
         ai = minim.getLineIn(Minim.MONO, width, 44100, 16); 
         ab = ap.mix;
 

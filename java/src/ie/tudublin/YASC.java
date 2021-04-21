@@ -49,24 +49,15 @@ public class YASC extends PApplet {
             GameObject go = gameObjects.get(i);
             go.update();
             go.render();
-        }
-       
-        // Check collisions        
-        checkCollisions();
-    }
 
-    void checkCollisions() 
-    {
-        if (dist(p.x, p.y, h.getX(), h.getY()) < p.halfW + h.halfW)
-        {
-            p.health += 10;
-            h.respawn();    
-        }
-
-        if (dist(p.x, p.y, a.x, a.y) < p.halfW + a.halfW)
-        {
-            p.ammo += 10;
-            a.respawn();    
+            if(go instanceof PowerUp)
+            {
+                if(dist(go.x, go.y, p.x, p.y) < go.halfW + p.halfW)
+                {
+                    ((PowerUp) go).applyTo(p);
+                    gameObjects.remove(go);
+                }
+            }
         }
     }
 
