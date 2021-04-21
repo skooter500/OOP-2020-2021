@@ -37,31 +37,6 @@ public class Loops extends PApplet {
         {
             case 0:
             {
-<<<<<<< HEAD
-                fill(50, 255, 255);
-                if(mouseX < cx)
-                {
-                    rect(0, 0, cx, height);
-                }
-                else
-                {
-                    rect(cx, 0, cx, height);
-                }
-                break;
-            }
-            case 1:
-            {
-                fill(50, 255, 255);
-                if(mouseX < cx && mouseY < cy)
-                {
-                    rect(0, 0, cx, cy); 
-                }
-                else if(mouseX > cx && mouseY < cy)
-                {
-                    rect(cx, 0, cx, cy);
-                }
-                else if(mouseX < cx && mouseY > cy)
-=======
                 float w = 200;
                 float h = 50;
                 rectMode(CENTER);                    
@@ -77,6 +52,7 @@ public class Loops extends PApplet {
                 break;
             }                
             case 1:
+            {
                 fill(50, 255, 255);                                    
                 if (mouseX < cx && mouseY < cy)
                 {
@@ -87,7 +63,6 @@ public class Loops extends PApplet {
                     rect(cx, 0, cx, cy);
                 }
                 else if (mouseX < cx && mouseY > cy)
->>>>>>> 4234dbe7c2dbecc05eac35d4d0a6fc0d6067cfaa
                 {
                     rect(0, cy, cx, cy);
                 }
@@ -96,20 +71,13 @@ public class Loops extends PApplet {
                     rect(cx, cy, cx, cy);
                 }
                 break;
-<<<<<<< HEAD
             }
-=======
->>>>>>> 4234dbe7c2dbecc05eac35d4d0a6fc0d6067cfaa
             case 2:
             {
                 int numRects = (int)(mouseX / 10.0f);
                 float w = width / (float) numRects;
                 float cgap = 255 / (float) numRects;
-<<<<<<< HEAD
-                for(int i = 0; i < numRects; i++)
-=======
                 for(int i = 0 ; i < numRects ; i ++)
->>>>>>> 4234dbe7c2dbecc05eac35d4d0a6fc0d6067cfaa
                 {
                     fill(i * cgap, 255, 255);
                     rect(i * w, 0, w, height);
@@ -121,18 +89,10 @@ public class Loops extends PApplet {
                 int numCircles = (int)(mouseX / 10.0f);
                 float w = width / (float) numCircles;
                 float cgap = 255 / (float) numCircles;
-<<<<<<< HEAD
+
                 for(int i = 0; i < numCircles; i++)
                 {
                     fill(i * cgap, 255, 255);
-                    ellipse(w / 2 + (i * w), cy, w, w);
-                }
-                break;
-            }
-=======
-                for(int i = 0 ; i < numCircles ; i ++)
-                {
-                    fill(cgap * i, 255, 255);
                     ellipse(w / 2 + (i * w), cy, w, w);
                 }
                 break;
@@ -211,11 +171,8 @@ public class Loops extends PApplet {
                     line(cx + x1, cy + y1, cx + x2, cy + y2);
                 }
             }
-<<<<<<< HEAD
->>>>>>> 4234dbe7c2dbecc05eac35d4d0a6fc0d6067cfaa
-=======
             break;
->>>>>>> 8929d895bf36ad3434fedc7c034592dcd8f0d454
+
         }
     }
 }

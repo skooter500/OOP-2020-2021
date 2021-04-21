@@ -39,11 +39,35 @@ Resources
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
 
+# Week 11 - Polymorphism, interfaces & strings
+- [Video of the class](https://youtu.be/QVWeU7rFlo4)
+
+Solution to [this coding bat problem](https://codingbat.com/prob/p123614):
+
+```Java
+public int countCode(String str) {
+  int loc = str.indexOf("co");
+  int count = 0;
+  while(loc != -1)
+  {
+    if (str.length() > loc + 3 && str.charAt(loc + 3) == 'e')
+    {
+      count ++;
+    }
+    loc = str.indexOf("co", loc + 2);
+  }
+  return count;
+}
+```
+
 # Week 10 - Inheritance & Abstract Classes, Bullets in the YASC game
 ## Lecture
 - [Video of the class](https://web.microsoftstream.com/video/07c190ba-948c-48ea-be72-552ef0a99526)
 - [Inheritance](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
 - [Abstract classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+
+## Tutorial
+- [Video of the tutorial](https://web.microsoftstream.com/video/29f434db-4070-4871-a478-89ace8df2768?list=studio)
 
 # Week 9 - YASC
 

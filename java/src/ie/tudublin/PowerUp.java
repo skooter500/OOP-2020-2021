@@ -1,5 +1,5 @@
 package ie.tudublin;
 
-public class PowerUp {
+public interface PowerUp {
     void applyTo(Player p);
 }

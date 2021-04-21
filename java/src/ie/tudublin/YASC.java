@@ -14,8 +14,6 @@ public class YASC extends PApplet {
     // Write movePlayer
 
     Player p;
-    Health h;
-    Ammo a;
     ArrayList<GameObject> gameObjects = new ArrayList<GameObject>();
 
     // Polymorphism!
@@ -27,12 +25,10 @@ public class YASC extends PApplet {
 
     public void setup() {
         p = new Player(this, width / 2, height / 2);
-        h = new Health(this);
-        a = new Ammo(this);
 
         gameObjects.add(p);
-        gameObjects.add(h);
-        gameObjects.add(a);
+        gameObjects.add(new Health(this));
+        gameObjects.add(new Ammo(this));
         
     }
 
@@ -50,9 +46,9 @@ public class YASC extends PApplet {
             go.update();
             go.render();
 
-            if(go instanceof PowerUp)
+            if (go instanceof PowerUp)
             {
-                if(dist(go.x, go.y, p.x, p.y) < go.halfW + p.halfW)
+                if (dist(go.x, go.y, p.x, p.y) < go.halfW + p.halfW)
                 {
                     ((PowerUp) go).applyTo(p);
                     gameObjects.remove(go);
