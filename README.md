@@ -40,6 +40,15 @@ Resources
 - https://github.com/skooter500/OOP-LabTest1-2016
 
 # Week 11 - Polymorphism, interfaces & strings
+
+## Tutorial
+- [Video of the tutorial](https://web.microsoftstream.com/video/e67cfa85-c011-48b2-998c-93a851add4da)
+- Solution to the lab test is in the "solution" branch of this repo
+
+## Lab
+- [Link to the test](https://github.com/skooter500/OOP-Test-2021-Starter)
+
+## Lecture
 - [Video of the class](https://youtu.be/QVWeU7rFlo4)
 
 Solution to [this coding bat problem](https://codingbat.com/prob/p123614):
@@ -59,6 +68,10 @@ public int countCode(String str) {
   return count;
 }
 ```
+
+## Lab
+- [Lab Test]()
+
 
 # Week 10 - Inheritance & Abstract Classes, Bullets in the YASC game
 ## Lecture
