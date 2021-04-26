@@ -26,7 +26,7 @@ Resources
 - [Assignments](assignments.md)
 
 - Week 11 Lab Test 20% 
-- Week 12 Assignment Submission - 30%
+- Week 13 Assignment Submission - 30%
 - End of Year exam - 50%
 
 # Previous Years Lab Tests
