@@ -1,5 +1,7 @@
 package ie.tudublin;
 
+import javax.lang.model.util.ElementScanner14;
+
 import processing.core.PApplet;
 
 public class Loops extends PApplet {
@@ -50,6 +52,7 @@ public class Loops extends PApplet {
                 break;
             }                
             case 1:
+            {
                 fill(50, 255, 255);                                    
                 if (mouseX < cx && mouseY < cy)
                 {
@@ -68,6 +71,7 @@ public class Loops extends PApplet {
                     rect(cx, cy, cx, cy);
                 }
                 break;
+            }
             case 2:
             {
                 int numRects = (int)(mouseX / 10.0f);
@@ -85,9 +89,10 @@ public class Loops extends PApplet {
                 int numCircles = (int)(mouseX / 10.0f);
                 float w = width / (float) numCircles;
                 float cgap = 255 / (float) numCircles;
-                for(int i = 0 ; i < numCircles ; i ++)
+
+                for(int i = 0; i < numCircles; i++)
                 {
-                    fill(cgap * i, 255, 255);
+                    fill(i * cgap, 255, 255);
                     ellipse(w / 2 + (i * w), cy, w, w);
                 }
                 break;
@@ -167,6 +172,7 @@ public class Loops extends PApplet {
                 }
             }
             break;
+
         }
     }
 }

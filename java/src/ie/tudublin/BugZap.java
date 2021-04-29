@@ -12,7 +12,7 @@ public class BugZap extends PApplet {
 	}
 
 	float playerX, playerY;
-	float playerSpeed = 5;
+	float playerSpeed = 20;
 	float playerWidth = 40;
 	float halfPlayerWidth = playerWidth / 2;
 
@@ -64,8 +64,7 @@ public class BugZap extends PApplet {
 		line(x - halfPlayerWidth, y + playerHeight * 0.5f, x - (halfPlayerWidth * 0.8f), y + playerHeight * 0.3f);
 		line(x + halfPlayerWidth, y + playerHeight * 0.5f, x + (halfPlayerWidth * 0.8f), y + playerHeight * 0.3f);
 
-		line(x - (halfPlayerWidth * 0.8f), y + playerHeight * 0.3f, x + (halfPlayerWidth * 0.8f),
-				y + playerHeight * 0.3f);
+		line(x - (halfPlayerWidth * 0.8f), y + playerHeight * 0.3f, x + (halfPlayerWidth * 0.8f), y + playerHeight * 0.3f);
 
 		line(x, y, x, y + playerHeight * 0.3f);
 
