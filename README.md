@@ -26,7 +26,7 @@ Resources
 - [Assignments](assignments.md)
 
 - Week 11 Lab Test 20% 
-- Week 13 Assignment Submission - 30% [Submit Here](https://docs.google.com/forms/d/e/1FAIpQLSdhDytqHNFuqk4uepKc9SztUjNxmK1Al7DFMzYOwNMWHpNXjg/viewform)
+- Week 13 Assignment Submission - 30% - [Submit Here](https://docs.google.com/forms/d/e/1FAIpQLSdhDytqHNFuqk4uepKc9SztUjNxmK1Al7DFMzYOwNMWHpNXjg/viewform)
 - End of Year exam - 50%
 
 # Previous Years Lab Tests
@@ -93,7 +93,7 @@ public String withoutString(String base, String remove) {
 - Solution is in the solution branch
 
 ## Lecture
-- [Video of the class = Talking about the exam](https://web.microsoftstream.com/video/731eae2f-5613-4587-95c9-8aceb1d67ce5)
+- [Video of the class - Talking about the exam](https://web.microsoftstream.com/video/731eae2f-5613-4587-95c9-8aceb1d67ce5)
 - [Video of the class - Intro to Unity & wrapup](https://youtu.be/kH6dCuIwMsU)
 - [The Unity project we made](https://github.com/skooter500/HelloUnity)
 
