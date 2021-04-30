@@ -18,7 +18,7 @@ Resources
 * [The Processing language reference](http://processing.org/reference/)
 
 ## Contact the lecturer
-* Email: bryan.duggan@dit.ie
+* Email: bryan.duggan@tudublin.ie
 * Twitter: [@skooter500](http://twitter.com/skooter500)
 
 # Assessments
