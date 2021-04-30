@@ -26,7 +26,7 @@ Resources
 - [Assignments](assignments.md)
 
 - Week 11 Lab Test 20% 
-- Week 13 Assignment Submission - 30%
+- Week 13 Assignment Submission - 30% [Submit Here](https://docs.google.com/forms/d/e/1FAIpQLSdhDytqHNFuqk4uepKc9SztUjNxmK1Al7DFMzYOwNMWHpNXjg/viewform)
 - End of Year exam - 50%
 
 # Previous Years Lab Tests
@@ -38,6 +38,64 @@ Resources
 - https://github.com/skooter500/OOP-2018-Lab-Test-2
 - https://github.com/skooter500/OOP_Labtest1_2017_Starter
 - https://github.com/skooter500/OOP-LabTest1-2016
+
+# Week 12
+
+## Tutorial
+
+- [Video of the tutorial](https://web.microsoftstream.com/video/1ef113ab-4ad5-4cd8-9fbd-8bb1922ca76b)
+
+Solution to [this coding bat exercise](https://codingbat.com/prob/p199171):
+
+```Java
+public int countYZ(String str) {
+  int count = 0;
+  for(int i = 0 ; i < str.length(); i ++)
+  {
+    char c = Character.toLowerCase(str.charAt(i));
+    if (c == 'z' || c == 'y')
+    {
+      if (i == str.length() - 1 || ! Character.isLetter(str.charAt(i + 1)))
+      {
+        count ++;
+      }
+    }
+  }
+  return count;
+}
+```
+
+Solution to [this coding bat exercise](https://codingbat.com/prob/p192570):
+
+```Java
+public String withoutString(String base, String remove) {
+  String lcBase = base.toLowerCase();
+  String lcRemove = remove.toLowerCase();
+
+ 
+
+  String ret = "";
+  int start = 0;
+  int i = lcBase.indexOf(lcRemove);
+  while (i != -1)
+  {
+    ret += base.substring(start, i);
+    start = i + remove.length();
+    i = lcBase.indexOf(lcRemove, start);
+  }
+  ret += base.substring(start);
+  return ret;
+}
+```
+
+# Lab
+- [Lab Test](https://github.com/skooter500/GE2-Test-2021-Starter)
+- Solution is in the solution branch
+
+## Lecture
+- [Video of the class = Talking about the exam](https://web.microsoftstream.com/video/731eae2f-5613-4587-95c9-8aceb1d67ce5)
+- [Video of the class - Intro to Unity & wrapup](https://youtu.be/kH6dCuIwMsU)
+- [The Unity project we made](https://github.com/skooter500/HelloUnity)
 
 # Week 11 - Polymorphism, interfaces & strings
 

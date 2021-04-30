@@ -36,7 +36,7 @@ public class YASC extends PApplet {
 
         fill(255);
         background(0);
-        text("Bullets: " + gameObjects.size(), 50, 50);
+        text("Game Objects: " + gameObjects.size(), 50, 50);
         text("FPS: " + frameRate, 50, 100);
         
         stroke(255);
